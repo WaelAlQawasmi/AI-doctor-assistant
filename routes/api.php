@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\MedicalDiagnosisController;
+use App\Http\Middleware\CookieToHeaderToken;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +24,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/auth/signup', [AuthController::class, 'createUser']);
 Route::post('/auth/login', [AuthController::class, 'loginUser']);
-Route::get('/auth/get-all-users', [AuthController::class, 'getAllusers'])->middleware('auth:sanctum');
+Route::get('/auth/get-all-users', [AuthController::class, 'getAllusers'])->middleware('auth:sanctum|CookieToHeaderToken');
 Route::get('/auth/getUsrById/{id}', [AuthController::class, 'getUsrById'])->middleware('auth:sanctum');
 Route::get('/auth/getUsrByname/{name}', [AuthController::class, 'getUsrByName'])->middleware('auth:sanctum');
-Route::get('/main-page/userProfile', [AuthController::class, 'getUserProfile'])->middleware('auth:sanctum');
+Route::middleware([CookieToHeaderToken::class, 'auth:sanctum'])->group(function () {
+    Route::get('/main-page/userProfile', [AuthController::class, 'getUserProfile'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
+    Route::post('/medical-diagnosis',[MedicalDiagnosisController::class,'getAIDiagnosis'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
+
+});

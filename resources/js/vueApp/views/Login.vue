@@ -5,7 +5,7 @@
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
 					<div class="brand">
-						<img :src="botImage"  class="mt-4" height="200" alt="logo">
+						<img :src="botImage"  class="ml-5" height="200" alt="logo">
 					</div>
 					<div class="card fat">
 						<div class="card-body">
@@ -21,9 +21,7 @@
 
 								<div class="form-group">
 									<label for="password">Password
-										<a href="forgot.html" class="float-right">
-											Forgot Password?
-										</a>
+										
 									</label>
 									<input id="password" type="password" class="form-control" name="password" required data-eye v-model="password">
 								    <div class="invalid-feedback">
@@ -39,7 +37,7 @@
 								</div>
 
 								<div class="form-group m-0">
-									<button type="submit" class="btn btn-primary btn-block">
+									<button type="submit" class="btn btn-info btn-block">
 										Login
 									</button>
 								</div>

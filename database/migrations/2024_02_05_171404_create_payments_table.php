@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\pointManagement;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -9,21 +10,16 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *  ExpectedIllness: "",
-      *      LikelyIllness: "",
-      *      InitialGiagnosis: "",
-       *     SuggestedMedications: "",
-         *   RequiredTests: "",
-        *    MedicalAdvice: "",
-       *     symptoms: "",
      */
     public function up(): void
     {
-        Schema::create('medical_diagnoses', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class,"user_id");
-            $table->text("symptoms");
-            $table->json("InitialGiagnosis"); // json object
+            $table->foreignIdFor(pointManagement::class,"points_id");
+            $table->integer("number_of_points");
+            $table->integer("cost");
+            $table->integer("pay_type");
             $table->timestamps();
         });
     }
@@ -33,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('medical_diagnoses');
+        Schema::dropIfExists('payments');
     }
 };

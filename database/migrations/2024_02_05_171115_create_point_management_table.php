@@ -9,21 +9,14 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *  ExpectedIllness: "",
-      *      LikelyIllness: "",
-      *      InitialGiagnosis: "",
-       *     SuggestedMedications: "",
-         *   RequiredTests: "",
-        *    MedicalAdvice: "",
-       *     symptoms: "",
      */
     public function up(): void
     {
-        Schema::create('medical_diagnoses', function (Blueprint $table) {
+        Schema::create('point_management', function (Blueprint $table) {
             $table->id();
+            $table->text("point_type");
+            $table->integer("points");
             $table->foreignIdFor(User::class,"user_id");
-            $table->text("symptoms");
-            $table->json("InitialGiagnosis"); // json object
             $table->timestamps();
         });
     }
@@ -33,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('medical_diagnoses');
+        Schema::dropIfExists('point_management');
     }
 };

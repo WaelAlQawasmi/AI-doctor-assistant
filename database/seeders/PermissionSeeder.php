@@ -14,6 +14,7 @@ class PermissionSeeder extends Seeder
     public function run(): void
     {
         Permission::create(['name' => 'create doctor user']);
+        Permission::create(['name' => 'unlimit points']);
         Permission::create(['name' => 'add points']);
         Permission::create(['name' => 'manage users']);
         Permission::create(['name' => 'delete users']);

@@ -28,6 +28,7 @@ class AuthController extends Controller
     public function getAllusers(){
         return response()->json(User::all(),200);
     }
+
     public function createUser(Request $request)
     {
         try {
@@ -46,11 +47,17 @@ class AuthController extends Controller
                     'errors' => $validateUser->errors()
                 ], 401);
             }
+            $isActive=false;
+            if (Auth::check()) {
+                if(Auth::user()->hasPermissionTo('create doctor user'));
+                    $isActive=true;
+            }
 
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => Hash::make($request->password)
+                'password' => Hash::make($request->password),
+                'is_active'=>$isActive,
             ]);
 
             return response()->json([
@@ -88,6 +95,10 @@ class AuthController extends Controller
                     'errors' => $validateUser->errors()
                 ], 401);
             }
+            $user = User::where('email', $request->email)->first();
+            if (!$user->is_active)
+                return response()->json(['status'=>false,'message'=>"Your account is not active."],401);
+
 
             if(!Auth::attempt($request->only(['email', 'password']))){
                 return response()->json([
@@ -96,7 +107,6 @@ class AuthController extends Controller
                 ], 401);
             }
 
-            $user = User::where('email', $request->email)->first();
 
             return response()->json([
                 'status' => true,

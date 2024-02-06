@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\medicalDiagnosis;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use OpenAI;
@@ -11,8 +12,10 @@ class MedicalDiagnosisController extends Controller
 {
  
 
-    public function getAIDiagnosis(Request $request)
+    public function getBasicAIDiagnosis(Request $request)
     {
+        $this->authorize('BasicAIDiagnosis', User::class);
+
          $prompt = " $request->symptoms كمساعد في تشخيص الامراض الطبية لطبيب مختص  وكان قد جاءت حالة مرضية تعاني من  
         : اكتب رد  بحيث يكون كالتالي
                      1 - json  ان تكون الاستجابة  بصيغة

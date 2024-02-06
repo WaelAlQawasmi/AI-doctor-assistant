@@ -19,6 +19,7 @@ class RoleSeeder extends Seeder
             'name' => 'Super Admin',
             'email' => 'admin@infinta-jo.com',
             'password' => bcrypt('infinta2023'),
+            'is_active'=>true,
             'phone'=>'0788809906',
             ]);
     

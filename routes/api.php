@@ -29,6 +29,6 @@ Route::get('/auth/getUsrById/{id}', [AuthController::class, 'getUsrById'])->midd
 Route::get('/auth/getUsrByname/{name}', [AuthController::class, 'getUsrByName'])->middleware('auth:sanctum');
 Route::middleware([CookieToHeaderToken::class, 'auth:sanctum'])->group(function () {
     Route::get('/main-page/userProfile', [AuthController::class, 'getUserProfile'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
-    Route::post('/medical-diagnosis',[MedicalDiagnosisController::class,'getAIDiagnosis'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
+    Route::post('/medical-diagnosis',[MedicalDiagnosisController::class,'getBasicAIDiagnosis'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
 
 });

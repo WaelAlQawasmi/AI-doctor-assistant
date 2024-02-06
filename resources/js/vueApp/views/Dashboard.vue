@@ -113,7 +113,6 @@
 </template>
 <script>
 import { fetchData, postData } from '@/router/requestActions.js';
-
 export default {
     data() {
         return {
@@ -161,3 +160,7 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+@import '@/css/dashboard.css'; 
+</style>

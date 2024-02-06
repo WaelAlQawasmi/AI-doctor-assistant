@@ -55,7 +55,6 @@
 </template>
 <script>
 import botImage from '@/img/login.gif';
-
 import {  postData } from '@/router/requestActions.js';  
 import Cookies from 'js-cookie';
 
@@ -98,3 +97,7 @@ export default {
     }
 }
 </script>
+<style scoped>
+@import '@/css/login.css'; 
+
+</style>

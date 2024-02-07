@@ -38,7 +38,7 @@
                                     <li class="list-group-item">  الاستئارات المتبقية <span class="badge badge-primary badge-pill">4</span></li>
                                 </ul>
                                 <div class="card-body px-5 py-4">
-                                    <button type="button" class="btn btn-outline-danger">خروج</button>
+                                    <button type="button" @click="logout" class="btn btn-outline-danger">خروج</button>
                                 </div>
                             </div>
 
@@ -178,6 +178,9 @@ export default {
                 this.errorMessage = "Authentication failed";
             }
 
+        },
+        logout(){
+            this.$emit('logout');
         }
     }
 }

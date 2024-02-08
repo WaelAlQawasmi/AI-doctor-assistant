@@ -1,40 +1,33 @@
 <template>
-    <NavBar :isAuth="isAuthUser" @logout="logout" />
-    <router-view @logout="logout" @login="login" /> 
+  <div>
+    <NavBar v-if="isAuthenticated" @logout="logout" />
+    <router-view @logout="logout" @login="login" />
+  </div>
 </template>
+
 <script setup>
+import { ref, onMounted } from 'vue';
 import NavBar from '../components/NavBar.vue';
- import { RouterView } from 'vue-router';
+import { useRouter } from 'vue-router';
+import { isAuth } from '@/Mixins/authMixin.js';
 
-</script>
+const isAuthenticated = ref(false);
+const router = useRouter();
 
-<script>
-import { getLoginUser, isAuth } from '@/Mixins/authMixin.js';
+const logout = () => {
+  localStorage.clear();
+  isAuthenticated.value = isAuth();
+  router.push('/login');
+};
 
-export default {
-  created(){
-this.isAuthUser=isAuth()
-  },
-  data(){
-    return{
-      isAuthUser:'',
-    }
-  },
-  methods:{
-    isAuth,
-    logout(){
-      localStorage.clear();
-      this.$router.push('/login');
-      this.isAuthUser=isAuth();
-    },
-    login(){
-      console.log("login")
-      this.isAuthUser=isAuth();
+const login = () => {
+  setTimeout(() => {
+    isAuthenticated.value = isAuth();
+  }, 100);
+};
 
-      console.log(this.isAuthUser)
+onMounted(() => {
+  isAuthenticated.value = isAuth();
+});
+</script> 
 
-    }
-  }
-
-}
-</script>

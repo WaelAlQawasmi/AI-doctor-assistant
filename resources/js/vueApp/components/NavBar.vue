@@ -1,5 +1,5 @@
 <template>
-    <nav v-if="isAuth" class="navbar navbar-expand-lg navbar-light bg-light" style="direction: rtl; ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="direction: rtl; ">
         <a class="navbar-brand" href="#">دكتور صناعي</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,9 +30,7 @@
 </template>
 <script>
 export default {
-    props: {
-        isAuth: Boolean,
-    },
+  
     methods: {
         logout() {
             this.$emit('logout');

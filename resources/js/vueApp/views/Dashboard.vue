@@ -94,6 +94,8 @@ import doctorAi from '@/img/doctorAi.png';
 
 import { fetchData, postData } from '@/router/requestActions.js';
 export default {
+    emits: ['logout', 'login'],
+
     data() {
         return {
            AiResponseElement:['التشخيص الاولي','الامراض المتوقعة','المرض المرجح','الفحوصات المقترحة','الادوية المقترحة','النصائح الطبية'],

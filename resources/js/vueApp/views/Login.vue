@@ -75,6 +75,8 @@ export default {
               //  document.cookie = `token=${token}; Secure; HttpOnly; SameSite=None;`+" expires=" + new Date(Date.now() + 3600000).toUTCString() ;
               //  document.cookie = `authUserToken=${response.token}; HttpOnly`;
                 this.storeToken(response.token)
+				this.$emit('login');
+
                this.$router.push('/');
                 localStorage.setItem("isAuth",true);
                 localStorage.setItem("logedInUser",response.logedInUser);
@@ -90,7 +92,6 @@ export default {
             Cookies.set('authUserToken', token, {
                 secure: true, // Only send over HTTPS
             });
-			this.$emit('login');
         }
     }
 }

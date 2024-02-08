@@ -72,11 +72,15 @@ export default {
       async  login(){ 
             try{
                 var response=  await postData('auth/login',{email:this.email,password: this.password});
-              //  document.cookie = `token=${token}; Secure; HttpOnly; SameSite=None;`+" expires=" + new Date(Date.now() + 3600000).toUTCString() ;
-              //  document.cookie = `authUserToken=${response.token}; HttpOnly`;
                 this.storeToken(response.token)
-               this.$router.push('/');
+				this.$emit('login');
+                this.$router.push('/');
                 localStorage.setItem("isAuth",true);
+                localStorage.setItem("name",response.logedInUser.name);
+                localStorage.setItem("phone",response.logedInUser.phone);
+                localStorage.setItem("role",response.logedInUser.role);
+                localStorage.setItem("email",response.logedInUser.email);
+                localStorage.setItem("permissions",response.logedInUser.permissions);
                 localStorage.setItem("logedInUser",response.logedInUser);
                 localStorage.setItem("token",response.token);
 
@@ -90,7 +94,6 @@ export default {
             Cookies.set('authUserToken', token, {
                 secure: true, // Only send over HTTPS
             });
-			this.$emit('login');
         }
     }
 }

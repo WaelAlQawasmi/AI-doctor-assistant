@@ -107,10 +107,22 @@ class AuthController extends Controller
                 ], 401);
             }
 
+            $logedInUser=  $user;
+            $permissions =[];
+            foreach ( $logedInUser->getPermissionsViaRoles() as $item) {
+                $permissions[] = $item['name'];
+            }
 
             return response()->json([
-                'status' => true,
-                'message' => 'User Logged In Successfully',
+                'logedInUser' =>[
+                    'id' => $logedInUser->id,
+                    'name' => $logedInUser->name,
+                    'phone'=> $logedInUser->phone,
+                    'email' =>  $logedInUser->email,
+                    'is_active'=>  $logedInUser-> is_active,
+                    'role'=> $logedInUser-> roles[0]->name,
+                    'permissions' => $permissions,
+                ],
                 'token' => $user->createToken("API TOKEN")->plainTextToken
             ], 200);
 

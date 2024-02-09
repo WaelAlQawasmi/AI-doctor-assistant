@@ -5,3 +5,6 @@ export const getLoginUser =  () => {
 export const isAuth =  () => {
    return  localStorage.getItem("isAuth") ? JSON.parse(localStorage.getItem('isAuth')) : false;
 };
+export const getRole =  () => {
+   return  localStorage.getItem("role") ?localStorage.getItem('role') : false;
+};

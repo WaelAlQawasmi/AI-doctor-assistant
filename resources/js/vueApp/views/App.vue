@@ -28,6 +28,7 @@ const login = () => {
 
 onMounted(() => {
   isAuthenticated.value = isAuth();
+  console.log( isAuthenticated.value);
 });
 </script> 
 

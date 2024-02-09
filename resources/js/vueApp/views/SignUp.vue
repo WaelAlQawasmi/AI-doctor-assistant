@@ -35,25 +35,41 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="fullName">الاسم الكامل</label>
-                                    <input type="text" class="form-control" id="fullName">
+                                    <input type="text" class="form-control" id="name" v-model="name" name="name">
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="eMail">الايميل</label>
-                                    <input type="email" class="form-control" id="eMail">
+                                    <input type="email"  v-model="email" name="email" class="form-control" id="eMail">
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="phone">رقم الهاتف</label>
-                                    <input type="text" class="form-control" id="phone">
+                                    <input type="text" v-model="phone" name="phone" class="form-control" id="phone">
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="website">الاختصاص الطبي</label>
-                                    <input type="text" class="form-control" id="website">
+                                    <input type="text" v-model="specialty" name="specialty" class="form-control" id="website">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="ciTy">الرقم السري</label>
+                                    <input type="password"  v-model="password" name="password" class="form-control" id="password">
+                                </div>
+                            </div>
+                            <div  v-if ="getRole()=='admin'" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="ciTy">الدور</label>
+                                    <select class="custom-select"  v-model="role" name="role">
+                                        <option selected value="doctor">طبيب</option>
+                                        <option value="TA">تقني</option>
+                                        <option value="Admin">مدير</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -64,22 +80,25 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="Street">العنوان</label>
-                                    <input type="name" class="form-control" id="Street">
+                                    <input type="name"  v-model="location" name="location" class="form-control" id="Street">
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="ciTy">المدينة</label>
-                                    <input type="name" class="form-control" id="ciTy">
+                                    <input type="name" v-model="city" name="city" class="form-control" id="ciTy">
                                 </div>
                             </div>
+                           
+                            </div>
+                           
 
                         </div>
                         <div class="row gutters">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="text-right">
 
-                                    <button type="button" id="submit" name="submit" class="btn btn-primary">حفظ</button>
+                                    <button @click="signup" type="button" id="submit" name="submit" class="btn btn-primary">حفظ</button>
                                 </div>
                             </div>
                         </div>
@@ -87,13 +106,52 @@
                 </div>
             </div>
         </div>
-    </div>
+  
 </template>
 
 
 <script>
+import { getRole } from '@/Mixins/authMixin.js';
+import {  postData } from '@/router/requestActions.js';  
 
 export default {
+    data(){
+        return{
+            name:'',
+            email:'' ,
+            phone:'',
+            password:'' ,
+            location:'',
+            city :'',
+            role:'doctor',
+            specialty:'',
+
+        }
+    },
+    methods:{
+        async signup(){
+           
+            try{
+                var response=  await postData('auth/signup',{
+                    email:this.email,
+                    password: this.password,
+                    name:this.name,
+                    phone:this.phone,
+                    specialty:this.specialty,
+                    role:this.specialty,
+                    city:this.city,
+                    location:this.location
+                });
+                console.log(response.response.data);
+                console.log(this.name, this.email ,  this.phone , this.password,  this.location, this.city , this.role, this.specialty);
+            }
+            catch (error) {
+                console.log(error.response.data);
+                this.errorMessage="Authentication failed";
+            }
+        },
+        getRole
+    }
     // name: 'signup',
 };
 </script>

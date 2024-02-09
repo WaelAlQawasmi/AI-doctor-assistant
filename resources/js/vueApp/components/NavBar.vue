@@ -11,7 +11,7 @@
                     <router-link class="nav-link" to="/">الرئيسية </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/users">المستخدمين </router-link>
+                    <router-link class="nav-link" to="/users" v-if="getRole()=='admin'">المستخدمين </router-link>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">اعدادات</a>
@@ -29,9 +29,12 @@
     </nav>
 </template>
 <script>
+    import { getRole } from '@/Mixins/authMixin.js';
+
 export default {
-  
+
     methods: {
+        getRole,
         logout() {
             this.$emit('logout');
         }

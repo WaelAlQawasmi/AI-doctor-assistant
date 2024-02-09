@@ -23,11 +23,18 @@ const router = createRouter({
             path: "/signup",
             name: "signup",
             component: SignUp,
+            meta: {
+                authRequired: 'both'
+            }
+
         },
          {
             path: "/users",
             name: "UserManagement",
             component: UserManagement,
+            meta: {
+                authRequired: true
+            }
         },
     ]
 })
@@ -39,6 +46,10 @@ router.beforeEach(async(to) => {
     if (!localStorage.getItem("isAuth") && authRequired == true) {
         return '/login';
     }
+    if (localStorage.getItem("isAuth") && (authRequired != true && authRequired != 'both') ){
+        return '/';
+    }
+
 });
 
 

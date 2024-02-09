@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\MedicalDiagnosisController;
+use App\Http\Controllers\PointManagementController;
 use App\Http\Middleware\CookieToHeaderToken;
 
 use Illuminate\Http\Request;
@@ -28,7 +29,11 @@ Route::get('/auth/get-all-users', [AuthController::class, 'getAllusers'])->middl
 Route::get('/auth/getUsrById/{id}', [AuthController::class, 'getUsrById'])->middleware('auth:sanctum');
 Route::get('/auth/getUsrByname/{name}', [AuthController::class, 'getUsrByName'])->middleware('auth:sanctum');
 Route::middleware([CookieToHeaderToken::class, 'auth:sanctum'])->group(function () {
+    Route::get('/point-management/users-with-points', [PointManagementController::class, 'getAllusersWithPoints'])->middleware(['can:manage users']);
     Route::get('/main-page/userProfile', [AuthController::class, 'getUserProfile'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
     Route::post('/medical-diagnosis',[MedicalDiagnosisController::class,'getBasicAIDiagnosis'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
 
 });
+
+
+

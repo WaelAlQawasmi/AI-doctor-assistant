@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\doctorDetails;
+use App\Models\pointManagement;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,6 +27,19 @@ class AuthController extends Controller
         return response()->json(User::where('name',$name)  ->first());
 
     }
+    public function activateUser( Request $request){
+        $user = User::find($request->id);
+        $user->is_active=true;
+        $user->save();
+        return response('',200);
+
+    }
+    public function deactivateUser( Request $request){
+        $user = User::find($request->id);
+        $user->is_active=false;
+        $user->save();
+        return response('',200);
+    }
 
 
 
@@ -46,13 +60,17 @@ class AuthController extends Controller
                     'status' => false,
                     'message' => 'validation error',
                     'errors' => $validateUser->errors()
-                ], 401);
+                ], 400);
             }
             $isActive=false;
-            if (Auth::check()) {
-                if(Auth::user()->hasPermissionTo('create doctor user'))
-                    $isActive=true;
-            }
+            $userRole='doctor';
+           // if (Auth::guard('sanctum')->check()) {
+           //     if(Auth::guard('sanctum')->user()->hasPermissionTo('create doctor user'))
+                //    $isActive=true;
+            //    if( Auth::guard('sanctum')->user()->hasPermissionTo('sensitive data'))
+                    $userRole=$request->role;
+                
+           // }
 
             $user = User::create([
                 'name' => $request->name,
@@ -62,15 +80,7 @@ class AuthController extends Controller
                 'is_active'=>$isActive,
             ]);
 
-
-           
-
-            if( !Auth::user()->hasPermissionTo('sensitive data')){
-                $user->assignRole('doctor');
-            } else{
-                $user->assignRole($request->role);
-            }
-
+            $user->assignRole($userRole);
             if($request->role=='doctor'){
                 doctorDetails::create([
                     'user_id' => $user->id,
@@ -83,7 +93,7 @@ class AuthController extends Controller
                 'status' => true,
                 'message' => 'User Created Successfully',
                 'token' => $user->createToken("API TOKEN")->plainTextToken
-            ], 200);
+            ], 201);
 
         } catch (\Throwable $th) {
             return response()->json([
@@ -114,37 +124,37 @@ class AuthController extends Controller
                     'errors' => $validateUser->errors()
                 ], 401);
             }
-            $user = User::where('email', $request->email)->first();
-            if (!$user->is_active)
-                return response()->json(['status'=>false,'message'=>"Your account is not active."],401);
 
+            $credentials = $request->only('email', 'password');
 
-            if(!Auth::attempt($request->only(['email', 'password']))){
+            if (Auth::attempt($credentials)) {
+                $user = Auth::user();
+                $user->tokens()->delete();
+                if (!$user->is_active)
+                    return response()->json(['status'=>false,'message'=>"Your account is not active."],401);
+
+                $token = $user->createToken('token-name')->plainTextToken;
+                $logedInUser=  $user;
+                $permissions =[];
+                foreach ( $logedInUser->getPermissionsViaRoles() as $item) {
+                    $permissions[] = $item['name'];
+                }
                 return response()->json([
-                    'status' => false,
-                    'message' => 'Email & Password does not match with our record.',
-                ], 401);
+                    'logedInUser' =>[
+                        'id' => $logedInUser->id,
+                        'name' => $logedInUser->name,
+                        'phone'=> $logedInUser->phone,
+                        'email' =>  $logedInUser->email,
+                        'is_active'=>  $logedInUser-> is_active,
+                        'role'=> $logedInUser-> roles[0]->name,
+                        'permissions' => $permissions,
+                    ],
+                    'token' => $token
+                ], 200);
+    
             }
-           // $user->tokens()->where('id', '!=', $user->currentAccessToken()->id)->delete();
-
-            $logedInUser=  $user;
-            $permissions =[];
-            foreach ( $logedInUser->getPermissionsViaRoles() as $item) {
-                $permissions[] = $item['name'];
-            }
-
-            return response()->json([
-                'logedInUser' =>[
-                    'id' => $logedInUser->id,
-                    'name' => $logedInUser->name,
-                    'phone'=> $logedInUser->phone,
-                    'email' =>  $logedInUser->email,
-                    'is_active'=>  $logedInUser-> is_active,
-                    'role'=> $logedInUser-> roles[0]->name,
-                    'permissions' => $permissions,
-                ],
-                'token' => $user->createToken("API TOKEN")->plainTextToken
-            ], 200);
+    
+            return response()->json(['message' => 'Unauthorized'], 401);
 
         } catch (\Throwable $th) {
             return response()->json([
@@ -155,7 +165,19 @@ class AuthController extends Controller
     }
 
     public function getUserProfile(){
-        return response()->json(User::find(Auth::id()),200);
+        $user=User::select('phone','name','is_active','email','id')->find(Auth::id());
+        $logedInUser=[
+            'name'=>$user->name,
+            'phone'=>$user->phone,
+            'email'=>$user->email,
+
+        ];
+        $points = pointManagement::where('user_id',$user->id)->where('points','>',0)->select('points','point_type')->get();
+        $userProfile=['logedInUser'=>$logedInUser,'points'=>$points];
+        if(!$user->hasAnyRole(['admin', 'TechnicalAssistant'])){
+            $userProfile['doctor']=doctorDetails::where('user_id',$user->id)->get();
+        }
+        return response()->json($userProfile,200);
     }
 }
 

@@ -59,6 +59,10 @@ import {  postData } from '@/router/requestActions.js';
 import Cookies from 'js-cookie';
 
 export default {
+	created(){
+		this.$emit('logout');
+
+	},
     data() {
         return {
             email: "",
@@ -86,7 +90,8 @@ export default {
 
             }
             catch (error) {
-                this.errorMessage="Authentication failed";
+				console.log(error)
+                this.errorMessage=error.response.data.message;
             }
 
         },

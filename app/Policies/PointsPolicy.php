@@ -13,10 +13,15 @@ class PointsPolicy
 
      public function BasicAIDiagnosis(User $user)
      {
-        $has_point = pointManagement::where('point_type', 'basic')
-        ->where('points', '>', 1)
-        ->where('user_id', $user->id)
-        ->count() >1;
+        $has_point =false;
+        $point = pointManagement::where('points', '>', 0)
+        ->where('user_id', $user->id)->first();
+        if ($point!= null){
+            $has_point =true;
+            $point->points -= 1; 
+            $point->save();
+
+        }
          return $user->hasPermissionTo('create doctor user')|| $has_point;
     }
 }

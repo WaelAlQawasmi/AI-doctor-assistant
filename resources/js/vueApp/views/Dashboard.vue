@@ -11,66 +11,91 @@
                                 <h4 class="card-title"> معلومات الطبيب</h4>
                             </div>
                             <div class="card-body user-profile-card mb-3">
-                                <img :src="doctorAi"
-                                    class="user-profile-image rounded-circle" alt="" />
-                                <h4 class="text-center h6 mt-2">اسم الطبيب</h4>
-                                <p class="text-center small">الاختصاص</p>
-                                <button class="btn btn-theme btn-sm">البريد الالكتروني</button>
+                                <img :src="doctorAi" class="user-profile-image rounded-circle" alt="" />
+                                <h4 class="text-center h6 mt-2">{{ name }} </h4>
+                                <p class="text-center small" v-if="specialty = ''"> {{ specialty }}</p>
+                                <p class="text-center small"> {{ email }}</p>
+                                <p class="text-center small"> {{ phone }}</p>
+
+                                <!-- <button class="btn btn-theme btn-sm">البريد الالكتروني</button> -->
                             </div>
                             <hr />
                             <div class="card-heading clearfix ">
                                 <h4 class="card-title"> البكجات المتوفرة</h4>
                             </div>
                             <div class=" ">
-                                <a href="#" class="label label-success mb-2"> الاساسي </a>
+                                <div class="alert alert-primary" v-if="!hasPoints" role="alert">لا يوجد لديك نقاط </div>
 
-                                <!-- <a href="#" class="label label-success">الدواء الثاني</a> -->
+                                <a v-for="(item, index) in pointsPackages " class="  mb-2 text-white"
+                                    :class="item.point_type == 'trial' ? 'badge badge-warning' : 'label label-success'"> {{
+                                        item.point_type }} - {{ item.points }} </a>
                             </div>
-                             <hr />
+                            <hr />
                             <div class="card-heading clearfix mt-3">
-                                <h4 class="card-title"> النشاطات  </h4>
+                                <h4 class="card-title"> النشاطات </h4>
                             </div>
                             <div class="card-body mb-3">
-                                <ul class="list-group list-group-flush">
+                                <!-- <ul class="list-group list-group-flush">
                                     <li class="list-group-item">شراء بكجات     <span class="badge badge-primary badge-pill">2</span></li>
                                     <li class="list-group-item">استشارات <span class="badge badge-primary badge-pill">7</span></li>
                                     <li class="list-group-item">عمليات دخول <span class="badge badge-primary badge-pill">5</span></li>
                                     <li class="list-group-item">  الاستئارات المتبقية <span class="badge badge-primary badge-pill">4</span></li>
-                                </ul>
+                                </ul> -->
                                 <div class="card-body px-5 py-4">
                                     <button type="button" @click="logout" class="btn btn-outline-danger">خروج</button>
                                 </div>
                             </div>
-
                             <hr />
-
-
-
                         </div>
                     </div>
                     <div class="col-lg-9 col-xl-9">
                         <div class="card card-white grid-margin">
                             <div class="card-body">
-                                <form class="post"  @submit.prevent="getAiResponse">
-                                    <textarea class="form-control" placeholder="الحالة المرضية" rows="4"></textarea>
+                                <form class="post" @submit.prevent="getAiResponse" v-if="hasPoints">
+                                    <div class="custom-control custom-radio custom-control-inline">
+
+                                        <input type="radio" id="customRadioInline1" v-model="gender" value="ذكر"
+                                            name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1"> ذكر</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" v-model="gender" value="انثى"
+                                            name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">انثى</label>
+                                    </div>
+                                    <div class="post-options"></div>
+                                    <textarea class="form-control" v-model="symptoms" placeholder="الحالة المرضية"
+                                        rows="4"></textarea>
+                                    <div class="post-options"></div>
+                                    <textarea class="form-control" v-model="oldResults" placeholder=" نتائج فحوصات"
+                                        rows="4"></textarea>
+                                    <div class="post-options"></div>
+                                    <textarea class="form-control" v-model="affectFactors"
+                                        placeholder=" عوامل مؤثرة كالحمل او طبيعة غذاء او عمل" rows="4"></textarea>
+                                    <div class="post-options"></div>
+
+                                    <textarea class="form-control" v-model="history" placeholder=" تاريخ المرضي"
+                                        rows="4"></textarea>
                                     <div class="post-options">
                                         <!-- <a href="#"><i class="fa fa-camera"></i></a>
-                                        <a href="#"><i class="fas fa-video"></i></a>
-                                        <a href="#"><i class="fa fa-music"></i></a> -->
-                                        <button type="submit" class="btn btn-outline-primary float-right">اسأل</button>
+                                            <a href="#"><i class="fas fa-video"></i></a>
+                                            <a href="#"><i class="fa fa-music"></i></a> -->
+                                        <button tpe="submit" class="btn btn-outline-primary float-right">اسأل</button>
                                     </div>
                                 </form>
+                                <div class="alert alert-primary" v-else role="alert">لا يوجد لديك نقاط لإستشارة الذكاء
+                                    الصناعي يرجى طلب نقاط لتتمكن من المواصلة</div>
                             </div>
                         </div>
-
                         <div class="profile-timeline">
                             <ul class="list-unstyled">
                                 <li class="timeline-item">
                                     <div class="card card-white grid-margin" style="height: 97%;">
-                                        <div class="card-body">
-                                            <img v-if="showAi" :src="botImage"  class="ml-5" height="200" alt="logo" style="position: relative;right: 34%;">
-
-                                            <div v-if="binding.length >0" v-for="(item, index) in AiResponseElement " :key="index" class="timeline-comment">
+                                        <div class="card-body" id="aiBot">
+                                            <img v-if="showAi" :src="botImage" class="ml-5" height="200" alt="logo" 
+                                                style="position: relative;right: 34%;">
+                                            <div v-if="binding.length > 0" v-for="(item, index) in medicalDiagnosisKeys "
+                                                :key="index" class="timeline-comment">
                                                 <div class="timeline-comment-header">
                                                 </div>
                                                 <p class="badge badge-pill" :class="getBadge(index)"> {{ item }} </p>
@@ -91,6 +116,7 @@
 <script>
 import botImage from '@/img/bot.gif';
 import doctorAi from '@/img/doctorAi.png';
+import { getRole } from '@/Mixins/authMixin.js';
 
 import { fetchData, postData } from '@/router/requestActions.js';
 export default {
@@ -98,39 +124,43 @@ export default {
 
     data() {
         return {
-           AiResponseElement:['التشخيص الاولي','الامراض المتوقعة','المرض المرجح','الفحوصات المقترحة','الادوية المقترحة','النصائح الطبية'],
-           binding:[],
-            ExpectedIllness: "",
-            LikelyIllness: "",
-            InitialGiagnosis: "",
-            SuggestedMedications: "",
-            RequiredTests: "",
-            MedicalAdvice: "",
+            gender: '',
+            oldResults: '',
+            affectFactors: '',
+            history: '',
             symptoms: "",
+
+            medicalDiagnosisKeys: [],
+
+            hasPoints: false,
+            pointsPackages: {},
+            phone: "",
+            email: "",
+            binding: [],
+            specialty: '',
+
             botImage,
-            showAi:false,
+            showAi: false,
             doctorAi,
             testData: {
-  "الادوية المقترحة": [
-    'مضاد حيوي - Augmentin 625mg tablet مرتين يوميًا لمدة أسبوع',
-    'مضاد التهاب - Ibuprofen 400mg tablet ثلاث مرات يوميًا لمدة أسبوع'
-  ],
-  "الامراض المتوقعة": [
-    'التهاب رئوي',
-    'سرطان الرئة',
-    'نقص الأكسجين في الدم'
-  ],
-  "التشخيص": "التهاب رئوي بسبب عدوى بكتيرية",
-  "الفحوصات المطلوبة": [
-    'أشعة مقطعية للرئة',
-    'فحص دم',
-    'زراعة للبلغم'
-  ],
-  "المرض المرجح": "التهاب رئوي",
-  "النصيحة الطبية": "من الأفضل أن تبدأ في تناول الأدوية وتحافظ على راحة السرير والاستمرار في الراحة والاستراحة الجيدة وتناول السوائل الدافئة بكثرة."
-},
-
-
+                "الادوية المقترحة": [
+                    'مضاد حيوي - Augmentin 625mg tablet مرتين يوميًا لمدة أسبوع',
+                    'مضاد التهاب - Ibuprofen 400mg tablet ثلاث مرات يوميًا لمدة أسبوع'
+                ],
+                "الامراض المتوقعة": [
+                    'التهاب رئوي',
+                    'سرطان الرئة',
+                    'نقص الأكسجين في الدم'
+                ],
+                "التشخيص": "التهاب رئوي بسبب عدوى بكتيرية",
+                "الفحوصات المطلوبة": [
+                    'أشعة مقطعية للرئة',
+                    'فحص دم',
+                    'زراعة للبلغم'
+                ],
+                "المرض المرجح": "التهاب رئوي",
+                "النصيحة الطبية": "من الأفضل أن تبدأ في تناول الأدوية وتحافظ على راحة السرير والاستمرار في الراحة والاستراحة الجيدة وتناول السوائل الدافئة بكثرة."
+            },
         }
     },
     created() {
@@ -139,59 +169,71 @@ export default {
     }
     ,
     methods: {
-        getBadge(index){
-            switch (index)
-            {
-                case 0 : return "badge-info";
-              //  case 1 : return "badge-warning";
-                case 2 : return "badge-danger" ;        
-                case 4 : return "badge-success" ;        
+        getRole,
+        getBadge(index) {
+            if (index % 2 != 0)
+                return '';
+            switch (index) {
+                case 0: return "badge-info";
+                case 2: return "badge-danger";
+                case 4: return "badge-success";
+
             }
+            if (index % 2 == 0)
+                return 'badge-info';
+
 
         },
         async getAiResponse() {
-            this.showAi=true;
+            this.showAi = true;
+            const element = document.getElementById('aiBot');
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    
             try {
-                var medicalDiagnosis =this.testData// await postData('medical-diagnosis/', { symptoms: this.symptoms });
+                var medicalDiagnosis = this.testData// 
+                var medicalDiagnosis = await postData('medical-diagnosis/', { symptoms: this.symptoms, gender: this.gender, history: this.history, affectFactors: this.affectFactors, oldResults: this.oldResults });
                 console.log(medicalDiagnosis);
-                this.ExpectedIllness = medicalDiagnosis['الامراض المتوقعة'].join('-');
-                this.LikelyIllness = medicalDiagnosis['المرض المرجح'];
-                this.MedicalAdvice = medicalDiagnosis['النصيحة الطبية'];
-                this.RequiredTests = medicalDiagnosis['الفحوصات المطلوبة'].join('-');
-                this.InitialGiagnosis = medicalDiagnosis['التشخيص'];
-                this.SuggestedMedications = medicalDiagnosis['الادوية المقترحة'].join('-');
-                this.binding=[this.InitialGiagnosis,this.ExpectedIllness,this.LikelyIllness,this.RequiredTests,this.SuggestedMedications,this.MedicalAdvice];
-
+                this.medicalDiagnosisKeys = Object.keys(medicalDiagnosis);
+                this.binding = this.medicalDiagnosisKeys.map(item => {
+                    item = medicalDiagnosis[item];
+                    if (Array.isArray(item)) {
+                        return item.join('-');
+                    } else {
+                        return item;
+                    }
+                });
             }
             catch (error) {
                 this.errorMessage = "Authentication failed";
             }
-            this.showAi=false;
-
-
+            this.getUser();
+            this.showAi = false;
         },
         async getUser() {
             try {
 
                 var userData = await fetchData('main-page/userProfile');
-                this.name = userData.name
+                this.name = userData.logedInUser.name
+                this.email = userData.logedInUser.email
+                this.phone = userData.logedInUser.phone
+                this.pointsPackages = userData.points
+                this.hasPoints = userData.points.length != 0 || getRole() == 'admin';
+
             }
             catch (error) {
                 this.errorMessage = "Authentication failed";
             }
 
         },
-        logout(){
+        logout() {
             this.$emit('logout');
         }
     }
 }
 </script>
 
-<style scoped>
-* {
+<style scoped>* {
     text-align: right !important;
 }
 
-@import '@/css/dashboard.css';
-</style>
+@import '@/css/dashboard.css';</style>

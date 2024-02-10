@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignIdFor(pointManagement::class,"points_id");
             $table->integer("number_of_points");
             $table->integer("cost");
-            $table->integer("pay_type");
+            $table->string("pay_type");
             $table->timestamps();
         });
     }

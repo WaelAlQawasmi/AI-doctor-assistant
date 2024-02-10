@@ -50,4 +50,8 @@ class User extends Authenticatable
     public function doctorDetails(){
         return  $this->hasOne(doctorDetails::class,'user_id');
     }
+    public function getPoints()
+    {
+        return $this->hasMany(pointManagement::class,'user_id');
+    }
 }

@@ -63,6 +63,7 @@
                                     </th>
                                     <th scope="col">الاسم</th>
                                     <th scope="col">الدور</th>
+                                    <th scope="col">البكجات</th>
                                     <th scope="col">الايميل</th>
                                     <th scope="col">رقم الهاتف</th>
                                     <th scope="col">عدد النقاط</th>
@@ -85,7 +86,8 @@
                                     <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""
                                             class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">{{
                                                 user.name }}</a></td>
-                                    <td><span class="badge badge-soft-success mb-0">{{ user.role }}</span></td>
+                                    <td><span class="badge  mb-0" :class="badgeClass(user.packagesType,user.role)" >{{ user.role + ''}} <span v-if="user.role=='doctor'"> {{ getPackagesType(user.packagesType) }}  </span></span></td>
+                                    <td>{{ user.packagesType }}</td>
                                     <td>{{ user.email }}</td>
                                     <td>{{ user.phone }}</td>
                                     <td>{{ user.total_points }}</td>
@@ -105,11 +107,17 @@
                                                 </a>
                                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                     <button type="button" class="dropdown-item btn btn-primary"
-                                                        data-toggle="modal" data-target="#exampleModal"
-                                                        @click="showPermissions(user.permissions.join('-'))">عرض
+                                                        data-toggle="modal" data-target="#showPermissions"
+                                                        @click="showUserPermissions(user.permissions.join('-'))">عرض
                                                         الصلاحيات</button>
+                                                    <button type="button" class="dropdown-item btn btn-primary"
+                                                        data-toggle="modal" data-target="#addPoints"
+                                                        @click="setUserToaddPoint(user.id )">
+                                                        اضافة نقاط</button>
                                                     <a class="dropdown-item" v-if="user.role != 'admin'"
-                                                        @click="activat(user.id, user.is_active)">{{ user.is_active ? 'ايقاف التنشيط' : " تفعيل" }}</a>
+                                                        @click="activation(user.id, user.is_active)">{{ user.is_active ? 'ايقاف التنشيط' : " تفعيل" }}</a>
+                                                    <a class="dropdown-item" v-if="user.role != 'admin' &&  getPackagesType(user.packagesType)=='No Packages' "
+                                                        @click="grantingTrialPeriod(user.id)"> {{ 'منح نسخة تجريبية '}}</a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -146,7 +154,8 @@
             </div> 
         </div> -->
     </div>
-    <PopUp :title="popUpTiltle" :message="popUpMassege" />
+    <PopUp :title="'صلاحيات'" :message="shwnUserPermissions" :inputs="[]" :action="''" :ModalName="'showPermissions'" />
+    <PopUp :title="'اضافة نقاط '" :message="'حدد النقاط التي ترغب باظافتها'" :inputs="['points','cost']" :action="'addPoints'" @addPoints="addPoints" :ModalName="'addPoints'" />
 </template>
 
 <script>
@@ -164,12 +173,109 @@ export default {
             popUpTiltle: "",
             popUpMassege: "",
             users: [],
+            userToaddPoint: '',
+            shwnUserPermissions:'',
         }
     },
     created() {
         this.getUsers();
     },
     methods: {
+        setUserToaddPoint(id){
+            this.userToaddPoint=id;
+        },
+        async addPoints( points, cost){
+            
+            console.log(this.userToaddPoint+ ' '+points +' '+cost)
+            try {
+                let url="payments/add-points-to-user";
+                var response = await postData(url, {
+                    id:this.userToaddPoint,
+                    points:points,
+                    cost:cost
+
+                });
+                    this.getUsers();
+                }
+            catch (error) {
+                console.log(error);
+            }
+        },
+        async activation (id,is_active){
+            try {
+                let url="auth/activate";
+                if(is_active){
+                    url="auth/deactivate";
+                }
+                var response = await postData(url, {
+                    id:id});
+                    console.log(response)
+                    this.getUsers();
+                }
+            catch (error) {
+                console.log(error);
+            }
+            
+        },
+        badgeClass(packagesType,role){
+            if(role=='admin')
+              return " badge-soft-primary" ;
+             if(role=='TechnicalAssistant')
+              return "badge-soft-info" ;
+            switch(this.getPackagesType(packagesType)){
+                case 'trial':
+                    return "badge-secondary";
+                case 'paid' : 
+                     return "badge-soft-success";
+                default :
+                return "badge-warning";
+                
+            }   
+            
+                
+        },
+        async grantingTrialPeriod(user_id){
+            try {
+                let url="payments/granting-trial-period";
+                var response = await postData(url, {
+                    id:user_id});
+                    console.log(response)
+                    this.getUsers();
+                }
+            catch (error) {
+                console.log(error);
+            }
+
+        },
+        
+        takedTrial(packagesType){
+            
+            const regex = /\btrial\b/i; // \b indicates a word boundary, i for case-insensitive matching
+
+            // Test if the text contains the word "trial"
+            const containsTrial = regex.test(packagesType);
+            return containsTrial?true : false ;
+
+        },
+        getPackagesType(packagesType){
+            if(packagesType==null)
+            return 'No Packages'
+            const regex = /\bpaid\b/i; // 
+
+            // Test if the text contains the word "trial"
+            const containsPaid  = regex.test(packagesType);
+            if(containsPaid){
+                return 'paid'
+            }
+            if (this.takedTrial) {
+                return 'trial' 
+            }
+
+           
+
+        }
+
+        ,
         async getUsers() {
             try {
                 this.users = await fetchData('point-management/users-with-points');
@@ -178,9 +284,9 @@ export default {
                 this.errorMessage = "request  failed";
             }
         },
-        showPermissions(permissions) {
+        showUserPermissions(permissions) {
             this.popUpTiltle = "الصلاحيات";
-            this.popUpMassege = permissions;
+            this.shwnUserPermissions = permissions;
         }
     }
 }

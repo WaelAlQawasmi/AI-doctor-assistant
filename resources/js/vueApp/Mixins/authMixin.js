@@ -8,3 +8,6 @@ export const isAuth =  () => {
 export const getRole =  () => {
    return  localStorage.getItem("role") ?localStorage.getItem('role') : false;
 };
+export const logOut =  () => {
+    localStorage.clear();
+}

@@ -73,7 +73,7 @@ return [
     | request. You may change the middleware listed below as required.
     |
     */
-    'http_only' => true,
+    'http_only' => false,
     'middleware' => [
         'authenticate_session' => Laravel\Sanctum\Http\Middleware\AuthenticateSession::class,
         'encrypt_cookies' => App\Http\Middleware\EncryptCookies::class,

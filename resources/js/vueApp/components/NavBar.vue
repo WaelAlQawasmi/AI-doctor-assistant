@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="direction: rtl; ">
+    <nav id="navBarelements" class="navbar navbar-expand-lg navbar-light bg-light" style="direction: rtl; ">
         <a class="navbar-brand" href="#">دكتور صناعي</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

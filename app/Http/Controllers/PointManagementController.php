@@ -14,11 +14,13 @@ class PointManagementController extends Controller
             'users.id', // Assuming you want to group by user ID
             'users.name',
             'users.is_active',
+            'users.phone',
             'users.email',
+            DB::raw("GROUP_CONCAT(point_management.point_type SEPARATOR ' - ') AS packages_type"),
             DB::raw('SUM(point_management.points) as total_points')
         )
         ->with('roles.permissions')
-        ->groupBy('users.id', 'users.name', 'users.is_active', 'users.email')
+        ->groupBy('users.id')
         ->get();
         $allUsers=[];
         foreach ($usersWithPoints as $user){
@@ -28,6 +30,7 @@ class PointManagementController extends Controller
                                 'phone'=>$user->phone,
                                 'email'=>$user->email,
                                 'is_active'=>$user->is_active,
+                                'packagesType'=>$user->packages_type
                                 ];
             $userWithNewFormat['role']=empty( $user->roles[0])?'doctor': $user->roles[0]->name;
 
@@ -42,4 +45,5 @@ class PointManagementController extends Controller
         }
         return response()->json( $allUsers,200);
     }
+
 }

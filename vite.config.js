@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath } from 'url'; // Importing from 'url' instead of 'node:url'
+import path from 'path'; // Importing 'path' for file path handling
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
+    publicPath: '/',
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
@@ -15,7 +17,8 @@ export default defineConfig({
         alias: {
             vue: 'vue/dist/vue.esm-bundler.js',
             '@': fileURLToPath(new URL('./resources/js/vueApp', import.meta.url))
-
         },
     }
 });
+
+

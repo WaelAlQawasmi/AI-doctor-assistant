@@ -63,7 +63,7 @@ class MedicalDiagnosisController extends Controller
             يُفضل أن تتضمن أسماء الأدوية أسماء تجارية باللغة الإنجليزية وكتابتها بالغغة الانجليزية مع الجرعات اللازمة.
             يُرجى التأكد من تقديم الرد بالتنسيق المطلوب و توضيح كل نقطة بشكل دقيق ووافٍ.
         ";
-          
+          return "500";
         $client = OpenAI::client( getenv('OPEN_AI_TOKEN'));
         $result = $client->chat()->create([
                     'model' => 'gpt-3.5-turbo',

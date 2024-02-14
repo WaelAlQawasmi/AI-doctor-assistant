@@ -20,7 +20,7 @@ class PointManagementController extends Controller
             DB::raw('SUM(point_management.points) as total_points')
         )
         ->with('roles.permissions')
-        ->groupBy('users.id')
+        ->groupBy('users.id', 'users.name', 'users.is_active', 'users.phone', 'users.email')
         ->get();
         $allUsers=[];
         foreach ($usersWithPoints as $user){

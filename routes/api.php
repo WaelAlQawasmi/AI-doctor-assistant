@@ -26,16 +26,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/auth/signup', [AuthController::class, 'createUser']);
 Route::post('/auth/login', [AuthController::class, 'loginUser']);
-Route::get('/auth/get-all-users', [AuthController::class, 'getAllusers'])->middleware('auth:sanctum|CookieToHeaderToken');
+Route::get('/auth/get-all-users', [AuthController::class, 'getAllusers'])->middleware('auth:sanctum');
 Route::get('/auth/getUsrById/{id}', [AuthController::class, 'getUsrById'])->middleware('auth:sanctum');
 Route::get('/auth/getUsrByname/{name}', [AuthController::class, 'getUsrByName'])->middleware('auth:sanctum');
-Route::middleware([CookieToHeaderToken::class, 'auth:sanctum'])->group(function () {
+Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('/auth/activate', [AuthController::class, 'activateUser']);
     Route::post('/auth/deactivate', [AuthController::class, 'deactivateUser']);
     Route::get('/point-management/users-with-points', [PointManagementController::class, 'getAllusersWithPoints'])->middleware(['can:manage users']);
     Route::post('/payments/granting-trial-period', [PaymentsController::class, 'grantingTrialPeriod'])->middleware(['can:manage users']);
     Route::post('/payments/add-points-to-user', [PaymentsController::class, 'addPointsToUser'])->middleware(['can:manage users']);
-    Route::get('/main-page/userProfile', [AuthController::class, 'getUserProfile'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
+    Route::get('/main-page/userProfile', [AuthController::class, 'getUserProfile']);
     Route::post('/medical-diagnosis',[MedicalDiagnosisController::class,'getBasicAIDiagnosis'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
 
 });

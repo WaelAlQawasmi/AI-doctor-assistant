@@ -14,7 +14,7 @@ class MedicalDiagnosisController extends Controller
 
     public function getBasicAIDiagnosis(Request $request)
     {
-        $this->authorize('BasicAIDiagnosis', User::class);
+      //  $this->authorize('BasicAIDiagnosis', User::class);
 
         //  $prompt = "   
         //   كمساعد في تشخيص الامراض الطبية لطبيب مختص  وكان قد جاءت حالة مرضية 
@@ -63,7 +63,7 @@ class MedicalDiagnosisController extends Controller
             يُفضل أن تتضمن أسماء الأدوية أسماء تجارية باللغة الإنجليزية وكتابتها بالغغة الانجليزية مع الجرعات اللازمة.
             يُرجى التأكد من تقديم الرد بالتنسيق المطلوب و توضيح كل نقطة بشكل دقيق ووافٍ.
         ";
-          return "500";
+          return $prompt;
         $client = OpenAI::client( getenv('OPEN_AI_TOKEN'));
         $result = $client->chat()->create([
                     'model' => 'gpt-3.5-turbo',

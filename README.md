@@ -23,7 +23,7 @@ The Medical Diagnosis Assistance System follows a typical client-server architec
 Installation and Setup
 
 ## How to set up 
-- composer install
+- composer install --no-dev
 - npm install 
 - npm run build 
 - create .env file and copy content from .example.env

@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { logOut } from '@/Mixins/authMixin.js';
 
-//const apiUrl = 'http://127.0.0.1:8089/api';
-//const apiUrl = 'https://www.ai.black-ch.com/api'; 
+
+
+const apiUrl = 'https://www.ai.black-ch.com/api'; 
 
 export const fetchData = async (endpoint) => {
   try {
@@ -25,6 +26,7 @@ export const fetchData = async (endpoint) => {
 };
 
 export const postData = async (endpoint, data) => {
+  console.log(apiUrl);
 
   try {
     const response = await axios.post(`${apiUrl}/${endpoint}`, data, {

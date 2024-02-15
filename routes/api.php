@@ -36,7 +36,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('/payments/granting-trial-period', [PaymentsController::class, 'grantingTrialPeriod'])->middleware(['can:manage users']);
     Route::post('/payments/add-points-to-user', [PaymentsController::class, 'addPointsToUser'])->middleware(['can:manage users']);
     Route::get('/main-page/userProfile', [AuthController::class, 'getUserProfile']);
-    Route::post('/medical-diagnosis/get-diagnosis',[MedicalDiagnosisController::class,'getBasicAIDiagnosis']);
+    Route::post('/medical-diagnosis',[MedicalDiagnosisController::class,'getBasicAIDiagnosis'])->middleware(['CookieToHeaderToken',CookieToHeaderToken::class]);
 
 });
 

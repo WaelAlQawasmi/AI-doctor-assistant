@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { logOut } from '@/Mixins/authMixin.js';
 
-const apiUrl =  'http://127.0.0.1:8089/api';
-//const apiUrl = 'https://www.ai.black-ch.com/api'; 
+//const apiUrl =  'http://127.0.0.1:8089/api';
+const apiUrl = 'https://www.ai.black-ch.com/api'; 
 
 export const fetchData = async (endpoint) => {
   try {
@@ -31,7 +31,7 @@ export const postData = async (endpoint, data) => {
       withCredentials: true,
       headers: {
         'Content-Type': 'application/json',
-      //  'Authorization': "Bearer " + localStorage.getItem("token"),
+        'Authorization': "Bearer " + localStorage.getItem("token"),
 
       },
     });

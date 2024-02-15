@@ -28,7 +28,7 @@ Installation and Setup
 - npm run build 
 - create .env file and copy content from .example.env
 - setup database in .env file (DB_DATABASE, 
-   DB_USERNAME, DB_PASSWORD)
+  DB_USERNAME, DB_PASSWORD)
 -  generate app key `php artisan key:generate`
 -  php artisan migrate
 -  php artisan db:seed

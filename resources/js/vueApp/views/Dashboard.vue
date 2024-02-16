@@ -191,7 +191,7 @@ export default {
                     
             try {
                 var medicalDiagnosis = this.testData// 
-                var medicalDiagnosis = await postData('medical-diagnosis/', { symptoms: this.symptoms, gender: this.gender, history: this.history, affectFactors: this.affectFactors, oldResults: this.oldResults });
+                var medicalDiagnosis = await postData('medical-diagnosis', { symptoms: this.symptoms, gender: this.gender, history: this.history, affectFactors: this.affectFactors, oldResults: this.oldResults });
                 console.log(medicalDiagnosis);
                 this.medicalDiagnosisKeys = Object.keys(medicalDiagnosis);
                 this.binding = this.medicalDiagnosisKeys.map(item => {

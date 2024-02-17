@@ -8,22 +8,24 @@
                     <div class="col-lg-5 col-xl-3">
                         <div class="card card-white grid-margin">
                             <div class="card-heading clearfix">
-                                <h4 class="card-title"> معلومات الطبيب</h4>
+                                <h4 class="card-title" > معلومات الطبيب</h4>
                             </div>
-                            <div class="card-body user-profile-card mb-3">
+                            <div class="card-body user-profile-card mb-3" >
                                 <img :src="doctorAi" class="user-profile-image rounded-circle" alt="" />
-                                <h4 class="text-center h6 mt-2">{{ name }} </h4>
-                                <p class="text-center small" v-if="specialty = ''"> {{ specialty }}</p>
-                                <p class="text-center small"> {{ email }}</p>
-                                <p class="text-center small"> {{ phone }}</p>
+                                <span id="dr_info">
+                                    <h4 class="text-center h6 mt-2">{{ name }} </h4>
+                                    <p class="text-center small" v-if="specialty = ''"> {{ specialty }}</p>
+                                    <p class="text-center small"> {{ email }}</p>
+                                    <p class="text-center small"> {{ phone }}</p>
+                                </span>
 
                                 <!-- <button class="btn btn-theme btn-sm">البريد الالكتروني</button> -->
                             </div>
                             <hr />
                             <div class="card-heading clearfix ">
-                                <h4 class="card-title"> البكجات المتوفرة</h4>
+                                <h4 class="card-title" id="step2"> البكجات المتوفرة</h4>
                             </div>
-                            <div class=" ">
+                            <div class=" " id="avalible-packages">
                                 <div class="alert alert-primary" v-if="!hasPoints" role="alert">لا يوجد لديك نقاط </div>
 
                                 <a v-for="(item, index) in pointsPackages " class="  mb-2 text-white"
@@ -32,7 +34,7 @@
                             </div>
                             <hr />
                             <div class="card-heading clearfix mt-3">
-                                <h4 class="card-title"> النشاطات </h4>
+                                <h4 class="card-title" id="activites"> النشاطات </h4>
                             </div>
                             <div class="card-body mb-3">
                                 <!-- <ul class="list-group list-group-flush">
@@ -52,7 +54,7 @@
                         <div class="card card-white grid-margin">
                             <div class="card-body">
                                 <form class="post" @submit.prevent="getAiResponse" v-if="hasPoints">
-                                    <div class="custom-control custom-radio custom-control-inline">
+                                    <div class="custom-control custom-radio custom-control-inline" id="sex">
 
                                         <input type="radio" id="customRadioInline1" v-model="gender" value="ذكر"
                                             name="customRadioInline1" class="custom-control-input">
@@ -64,17 +66,17 @@
                                         <label class="custom-control-label" for="customRadioInline2">انثى</label>
                                     </div>
                                     <div class="post-options"></div>
-                                    <textarea required class="form-control" v-model="symptoms" placeholder="الحالة المرضية"
+                                    <textarea id="case" required class="form-control" v-model="symptoms" placeholder="الحالة المرضية"
                                         rows="4"></textarea>
                                     <div class="post-options"></div>
-                                    <textarea class="form-control" v-model="oldResults" placeholder=" نتائج فحوصات"
+                                    <textarea id="tests" class="form-control" v-model="oldResults" placeholder=" نتائج فحوصات"
                                         rows="4"></textarea>
                                     <div class="post-options"></div>
-                                    <textarea class="form-control" v-model="affectFactors"
+                                    <textarea id="effectedFactory" class="form-control" v-model="affectFactors"
                                         placeholder=" عوامل مؤثرة كالحمل او طبيعة غذاء او عمل" rows="4"></textarea>
                                     <div class="post-options"></div>
 
-                                    <textarea class="form-control" v-model="history" placeholder=" تاريخ المرضي"
+                                    <textarea  id="history" class="form-control" v-model="history" placeholder=" تاريخ المرضي"
                                         rows="4"></textarea>
                                     <div class="post-options">
                                         <!-- <a href="#"><i class="fa fa-camera"></i></a>
@@ -82,8 +84,8 @@
                                             <a href="#"><i class="fa fa-music"></i></a> -->
                                         <button tpe="submit" class="btn btn-outline-primary float-right">اسأل</button>
                                     </div>
-                                    <div class="customCheckBoxHolder">
-                                        <input type="checkbox"  id="cCB1" class="customCheckBoxInput"
+                                    <div  id="AdvancedReponse" class="customCheckBoxHolder">
+                                        <input type="checkbox" id="cCB1" class="customCheckBoxInput"
                                             :disabled="!isUserHasAccessToAdvancedReponse" v-model="AdvancedReponseChecked">
                                         <label for="cCB1" class="customCheckBoxWrapper  "
                                             :title="isUserHasAccessToAdvancedReponse ? 'ستحصل على اجابة عالية في الدقة كما سيتم خصم نقاط اعلى' : ' لا يوجد لديك نقاط متقدمة '">
@@ -92,18 +94,8 @@
                                             </div>
                                         </label>
                                     </div>
-
-                                        <div class="alert alert-primary" v-if="!isUserHasAccessToAdvancedReponse"
-                                            role="alert">
-                                            لا يوجد لديك نقاط متقدمة </div>
-
-
-                                    
-
-
-                                 
-
-
+                                    <div class="alert alert-primary" v-if="!isUserHasAccessToAdvancedReponse" role="alert">
+                                        لا يوجد لديك نقاط متقدمة </div>
                                 </form>
                                 <div class="alert alert-primary" v-else role="alert">لا يوجد لديك نقاط لإستشارة الذكاء
                                     الصناعي يرجى طلب نقاط لتتمكن من المواصلة</div>
@@ -139,11 +131,15 @@
 import botImage from '@/img/bot.gif';
 import doctorAi from '@/img/doctorAi.png';
 import { getRole } from '@/Mixins/authMixin.js';
+import introJs from 'intro.js';
+import 'intro.js/introjs.css';
+
 
 import { fetchData, postData } from '@/router/requestActions.js';
 export default {
     emits: ['logout', 'login'],
-
+    mounted() {
+    },
     data() {
         return {
             gender: '',
@@ -187,10 +183,63 @@ export default {
     },
     created() {
 
+
+
+
         this.getUser();
     }
     ,
     methods: {
+        startIntro() {
+            const intro = introJs();
+            intro.setOptions({
+                steps: [
+                    {   title: 'الطبيب',
+                        element: '#dr_info',
+                        intro: 'المعلومات الخاصة بالطبيب',
+                    },
+                    {
+                        title: 'النقاط',
+                        element: '#avalible-packages',
+                        intro: 'النقاط المتوفرة و يتم الخصم منها بناء على نوع الاجابة المطلوبة',
+                    },
+                     {
+                        title: 'النشاطات',
+                        element: '#activites',
+                        intro: 'النشاطات التي قام بها الطبيب مؤخراً',
+                    },
+                      {
+                        title: 'الجنس',
+                        element: '#sex',
+                        intro: 'ير جى تحديد الجنس لان بعض التشخيصات تعتمد على الجنس كالحمل او غيرها ...' ,
+                    },{
+                        title: 'الحالة المرضية',
+                        element: '#case',
+                        intro: "يرجى ذكر جميع التفاصيل الحالة المرضية مما يعانيه او مما تعاينه كطبيب او اي تفاصيل اخرى تصف الحالة المرضية بشكل كامل",
+                    },
+                    {
+                        title: ' الفحوصات',
+                        element: '#tests',
+                        intro: "  يرجى ذكر الفحوصات ذات الصلة ان وجدت للحالة المرضية  مع نتائجها لتعطي تشخيص ادق ",
+                    },
+                     {
+                        title: ' عوامل مؤثرة',
+                        element: '#effectedFactory',
+                        intro: " برجى ذكر جميع العوامل المؤثرة او المؤدية لهذه الحالة  او العوامل ذات صلة  مثل الحمل  طبيعة عمل الشخص طبيعة غذائه  الظروف المحيطة الحواث مؤثرة ....",
+                    }, {
+                        title: '  التاريخ المرضي ذات الصلة',
+                        element: '#history',
+                        intro: "يرجى ذكر التاريخ المرضي ذات الصلة بالحالة المرضة و قد تؤثر بها مثل العمليات او الامراض او تاريخ مرضي اسري",
+                    },{
+                        title: ' اجابات عالية الدقة',
+                        element: '#AdvancedReponse',
+                        intro: " اذا كنت ترغب في اجابة عالية في الدقة  يرجى اختيار هذا الخيار  و يرجى التأكد من توفر نقاط متقدمة لاستخام هذه الميزة" ,
+                    },
+                    // Add more steps as needed
+                ],
+            });
+            intro.start();
+        },
 
         getRole,
         getBadge(index) {
@@ -229,7 +278,7 @@ export default {
             element.scrollIntoView({ behavior: 'smooth' });
             try {
                 var medicalDiagnosis = this.testData// 
-                var medicalDiagnosis = await postData('medical-diagnosis', { symptoms: this.symptoms, gender: this.gender, history: this.history, affectFactors: this.affectFactors, oldResults: this.oldResults , AdvancedReponse : this.AdvancedReponseChecked });
+                var medicalDiagnosis = await postData('medical-diagnosis', { symptoms: this.symptoms, gender: this.gender, history: this.history, affectFactors: this.affectFactors, oldResults: this.oldResults, AdvancedReponse: this.AdvancedReponseChecked });
                 console.log(medicalDiagnosis);
                 this.medicalDiagnosisKeys = Object.keys(medicalDiagnosis);
                 this.binding = this.medicalDiagnosisKeys.map(item => {
@@ -261,6 +310,7 @@ export default {
             catch (error) {
                 this.errorMessage = "Authentication failed";
             }
+            setTimeout(1500,this.startIntro()) ;
 
         },
         logout() {
@@ -276,3 +326,4 @@ export default {
 }
 </style>
 <style  src="../css/dashboard.css"></style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/css/bootstrap-tour.min.css" rel="stylesheet">

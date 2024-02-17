@@ -64,7 +64,7 @@
                                         <label class="custom-control-label" for="customRadioInline2">انثى</label>
                                     </div>
                                     <div class="post-options"></div>
-                                    <textarea class="form-control" v-model="symptoms" placeholder="الحالة المرضية"
+                                    <textarea required class="form-control" v-model="symptoms" placeholder="الحالة المرضية"
                                         rows="4"></textarea>
                                     <div class="post-options"></div>
                                     <textarea class="form-control" v-model="oldResults" placeholder=" نتائج فحوصات"
@@ -82,6 +82,28 @@
                                             <a href="#"><i class="fa fa-music"></i></a> -->
                                         <button tpe="submit" class="btn btn-outline-primary float-right">اسأل</button>
                                     </div>
+                                    <div class="customCheckBoxHolder">
+                                        <input type="checkbox"  id="cCB1" class="customCheckBoxInput"
+                                            :disabled="!isUserHasAccessToAdvancedReponse" v-model="AdvancedReponseChecked">
+                                        <label for="cCB1" class="customCheckBoxWrapper  "
+                                            :title="isUserHasAccessToAdvancedReponse ? 'ستحصل على اجابة عالية في الدقة كما سيتم خصم نقاط اعلى' : ' لا يوجد لديك نقاط متقدمة '">
+                                            <div class="customCheckBox">
+                                                <div class=" inner">اجابة عالية الدقة </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                        <div class="alert alert-primary" v-if="!isUserHasAccessToAdvancedReponse"
+                                            role="alert">
+                                            لا يوجد لديك نقاط متقدمة </div>
+
+
+                                    
+
+
+                                 
+
+
                                 </form>
                                 <div class="alert alert-primary" v-else role="alert">لا يوجد لديك نقاط لإستشارة الذكاء
                                     الصناعي يرجى طلب نقاط لتتمكن من المواصلة</div>
@@ -92,7 +114,7 @@
                                 <li class="timeline-item">
                                     <div class="card card-white grid-margin" style="height: 97%;">
                                         <div class="card-body" id="aiBot">
-                                            <img v-if="showAi" :src="botImage" class="ml-5" height="200" alt="logo" 
+                                            <img v-show="showAi" src="../img/bot.gif" class="ml-5" height="200" alt="logo"
                                                 style="position: relative;right: 34%;">
                                             <div v-if="binding.length > 0" v-for="(item, index) in medicalDiagnosisKeys "
                                                 :key="index" class="timeline-comment">
@@ -131,7 +153,7 @@ export default {
             symptoms: "",
 
             medicalDiagnosisKeys: [],
-
+            AdvancedReponseChecked: false,
             hasPoints: false,
             pointsPackages: {},
             phone: "",
@@ -169,6 +191,7 @@ export default {
     }
     ,
     methods: {
+
         getRole,
         getBadge(index) {
             if (index % 2 != 0)
@@ -184,14 +207,29 @@ export default {
 
 
         },
+        isUserHasAccessToAdvancedReponse() {
+            if (getRole == 'admin')
+                return true;
+            let hasAccess = false;
+            if (this.pointsPackages == null)
+                return false
+            const regex = /\badvanced\b/i; // 
+            this.pointsPackages.forEach(element => {
+                if (regex.test(element)) {
+                    hasAccess = true;
+                }
+            });
+            return hasAccess;
+        }
+
+        ,
         async getAiResponse() {
             this.showAi = true;
             const element = document.getElementById('aiBot');
-                    element.scrollIntoView({ behavior: 'smooth' });
-                    
+            element.scrollIntoView({ behavior: 'smooth' });
             try {
                 var medicalDiagnosis = this.testData// 
-                var medicalDiagnosis = await postData('medical-diagnosis', { symptoms: this.symptoms, gender: this.gender, history: this.history, affectFactors: this.affectFactors, oldResults: this.oldResults });
+                var medicalDiagnosis = await postData('medical-diagnosis', { symptoms: this.symptoms, gender: this.gender, history: this.history, affectFactors: this.affectFactors, oldResults: this.oldResults , AdvancedReponse : this.AdvancedReponseChecked });
                 console.log(medicalDiagnosis);
                 this.medicalDiagnosisKeys = Object.keys(medicalDiagnosis);
                 this.binding = this.medicalDiagnosisKeys.map(item => {
@@ -232,8 +270,9 @@ export default {
 }
 </script>
 
-<style scoped>* {
+<style scoped>
+* {
     text-align: right !important;
 }
-
-@import '@/css/dashboard.css';</style>
+</style>
+<style  src="../css/dashboard.css"></style>

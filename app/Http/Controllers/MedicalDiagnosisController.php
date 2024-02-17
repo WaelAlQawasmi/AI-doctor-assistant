@@ -14,32 +14,7 @@ class MedicalDiagnosisController extends Controller
 
     public function getBasicAIDiagnosis(Request $request)
     {
-        $this->authorize('BasicAIDiagnosis', User::class);
-
-        //  $prompt = "   
-        //   كمساعد في تشخيص الامراض الطبية لطبيب مختص  وكان قد جاءت حالة مرضية 
-         
-        //   $request->gender ل
-        //   تعاني من 
-        //   $request->symptoms 
-        //  $request->history والتاريخ الطبي للمريض هو  
-        //  $request->affectFactors علماً ان العوامل المؤثرة المحتملة 
-        //  $request->oldResults و كانت نتائج فحوص طبية سابقة هو 
-
-        // : اكتب رد  بحيث يكون كالتالي
-        //              1 - json  ان تكون الاستجابة  بصيغة
-        //             2-  ان يكون الرد بنفس هذه الترتيب
-        //             الامراض المتوقعة :  [array]
-        //             المرض المرجح :[string]
-        //                 التشخيص : [string] 
-        //             الفحوصات المطلوبة: [array]
-        //              الادوية المقترحة :  [array]
-        //              النصيحة الطبية :   [string]
-      
-        //         3- يحب ان يكون اسماء الادوية اسماء تجارية باللغة الانجليزية مع الجرعات اللزمة
-               
-        //    ";
-
+        $this->authorize('BasicAIDiagnosis',[ User::class, $request->AdvancedReponse]);
         $prompt = "   
             يقوم مساعد التشخيص الطبي بمساعدة الأطباء المختصين في تحديد الأمراض المحتملة للمرضى. 
             بناءً على المعلومات التالية:
@@ -64,6 +39,12 @@ class MedicalDiagnosisController extends Controller
             يُرجى التأكد من تقديم الرد بالتنسيق المطلوب و توضيح كل نقطة بشكل دقيق ووافٍ.
             يُرجى التأكد من تقديم تشخيص علمي عالي الدقة.
         ";
+
+        if($request->AdvancedReponse){
+            $prompt .='يُرجى التأكد من تقديم اجابة عالية من الدقة. 
+            يُرجى التأكد من تقديم اعلى درجات الدقة في الاجابة. 
+             يرجى ارسال مصادر  و مراجع عليمة تؤكد التشخيص . ';
+        }
         $client = OpenAI::client( getenv('OPEN_AI_TOKEN'));
         $result = $client->chat()->create([
                     'model' => 'gpt-3.5-turbo',
@@ -72,7 +53,7 @@ class MedicalDiagnosisController extends Controller
 
         $response=$result->choices[0]->message->content; 
         medicalDiagnosis::create([
-            'InitialGiagnosis' => $response,
+            'InitialGiagnosis' => json_encode( $response),
             'user_id'=>Auth::id(),
             'symptoms'=>json_encode([
                'oldResults'=> $request->oldResults,

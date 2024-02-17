@@ -2,48 +2,63 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\payments;
+use App\Models\pointManagement;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class PointManagementController extends Controller
 {
-    public function getAllusersWithPoints(){
+    public function getAllusersWithPoints()
+    {
         $usersWithPoints = User::leftJoin('point_management', 'users.id', '=', 'point_management.user_id')
-        ->select(
-            'users.id', // Assuming you want to group by user ID
-            'users.name',
-            'users.is_active',
-            'users.phone',
-            'users.email',
-            DB::raw("GROUP_CONCAT(point_management.point_type SEPARATOR ' - ') AS packages_type"),
-            DB::raw('SUM(point_management.points) as total_points')
-        )
-        ->with('roles.permissions')
-        ->groupBy('users.id', 'users.name', 'users.is_active', 'users.phone', 'users.email')
-        ->get();
-        $allUsers=[];
-        foreach ($usersWithPoints as $user){
-            $userWithNewFormat=['name'=>$user->name,
-                                'total_points'=>$user->total_points
-                                ,'id'=>$user->id,
-                                'phone'=>$user->phone,
-                                'email'=>$user->email,
-                                'is_active'=>$user->is_active,
-                                'packagesType'=>$user->packages_type
-                                ];
-            $userWithNewFormat['role']=empty( $user->roles[0])?'doctor': $user->roles[0]->name;
+            ->select(
+                'users.id', // Assuming you want to group by user ID
+                'users.name',
+                'users.is_active',
+                'users.phone',
+                'users.email',
+                DB::raw("GROUP_CONCAT(point_management.point_type SEPARATOR ' - ') AS packages_type"),
+                DB::raw('SUM(point_management.points) as total_points')
+            )
+            ->with('roles.permissions')
+            ->groupBy('users.id', 'users.name', 'users.is_active', 'users.phone', 'users.email')
+            ->get();
+        $allUsers = [];
+        foreach ($usersWithPoints as $user) {
+            $userWithNewFormat = [
+                'name' => $user->name,
+                'total_points' => $user->total_points, 'id' => $user->id,
+                'phone' => $user->phone,
+                'email' => $user->email,
+                'is_active' => $user->is_active,
+                'packagesType' => $user->packages_type
+            ];
+            $userWithNewFormat['role'] = empty($user->roles[0]) ? 'doctor' : $user->roles[0]->name;
 
-            $permissions=[];
-            if(!empty($user->roles[0])) {
-                foreach($user->roles[0]->permissions as $permission){
+            $permissions = [];
+            if (!empty($user->roles[0])) {
+                foreach ($user->roles[0]->permissions as $permission) {
                     array_push($permissions, $permission->name);
                 }
             }
-            $userWithNewFormat['permissions']=$permissions;
-            array_push($allUsers,$userWithNewFormat);
+            $userWithNewFormat['permissions'] = $permissions;
+            array_push($allUsers, $userWithNewFormat);
         }
-        return response()->json( $allUsers,200);
+        array_push($allUsers);
+
+
+        return response()->json($allUsers, 200);
     }
 
+    public static function  addNewPoints($userId, $points, $pointType){
+        $trialPoint = pointManagement::create([
+            'user_id' => $userId,
+            'points' => $points,
+            'point_type' => $pointType
+        ]);
+        return  $trialPoint->id;
+        
+    }
 }

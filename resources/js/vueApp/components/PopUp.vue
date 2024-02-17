@@ -11,9 +11,12 @@
       <div class="modal-body">
         
         {{ message }}
-        <div class="form-group" v-for=" (input, index) in inputs">
+        <div class="form-group" v-for=" (input, index) in inputsName">
             <label for="recipient-name" class="col-form-label">{{ input }}</label>
-            <input type="text"  v-model="inputValues[index]" :name="input" class="form-control" id="recipient-name">
+            <select v-if="isSelect(index)"  class="form-control form-control-sm" aria-label="اختر نوع النقاط" v-model="inputValues[index]">
+              <option v-for=" (Option) in selectOptions[0]" :value="Option">{{ Option }}</option>
+            </select>
+           <input v-else :type="inputsType.includes(index)?inputsType[index]: 'text' "  v-model="inputValues[index]"  :name="input" class="form-control" id="recipient-name" />
         </div>
       </div>
       
@@ -29,7 +32,9 @@
 export default {
     props: {
         ModalName:String,
-        inputs:[],
+        inputsName:[],
+        inputsType:[],
+        selectOptions:[],
         message: String,
         title:String,
         action:String,
@@ -42,6 +47,14 @@ export default {
 
     },
     methods:{
+      isSelect(index){
+        if (this.inputsType && this.inputsType.length > index) {
+          console.log(this.inputsType[index]);
+          return this.inputsType[index] === 'select';
+        } else {
+          return false;
+        }
+      },
       doAction(){
         this.$emit(this.action, ...this.inputValues);
         this.inputValues=[];

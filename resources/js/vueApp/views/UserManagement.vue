@@ -155,7 +155,7 @@
         </div> -->
     </div>
     <PopUp :title="'صلاحيات'" :message="shwnUserPermissions" :inputs="[]" :action="''" :ModalName="'showPermissions'" />
-    <PopUp :title="'اضافة نقاط '" :message="'حدد النقاط التي ترغب باظافتها'" :inputs="['points','cost']" :action="'addPoints'" @addPoints="addPoints" :ModalName="'addPoints'" />
+    <PopUp :title="'اضافة نقاط '" :message="'حدد النقاط التي ترغب باظافتها'" :inputsName="['points','cost','pointsType']" :inputsType="['text','text','select']" :selectOptions="[['basic', 'advanced']]" :action="'addPoints'" @addPoints="addPoints" :ModalName="'addPoints'" />
 </template>
 
 <script>
@@ -184,15 +184,15 @@ export default {
         setUserToaddPoint(id){
             this.userToaddPoint=id;
         },
-        async addPoints( points, cost){
+        async addPoints( points, cost, type){
             
-            console.log(this.userToaddPoint+ ' '+points +' '+cost)
             try {
                 let url="payments/add-points-to-user";
                 var response = await postData(url, {
                     id:this.userToaddPoint,
                     points:points,
-                    cost:cost
+                    cost:cost,
+                    pointsType:type,
 
                 });
                     this.getUsers();
@@ -270,9 +270,6 @@ export default {
             if (this.takedTrial) {
                 return 'trial' 
             }
-
-           
-
         }
 
         ,

@@ -11,7 +11,7 @@
                     <router-link class="nav-link" to="/">الرئيسية </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/users" v-if="getRole()=='admin'">المستخدمين </router-link>
+                    <router-link class="nav-link" to="/users" v-if="getRole()=='admin' || getRole()=='TechnicalAssistant' ">المستخدمين </router-link>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">اعدادات</a>

@@ -8,32 +8,44 @@ use Illuminate\Http\Request;
 
 class PaymentsController extends Controller
 {
-    public function grantingTrialPeriod( Request $request){
-        $trialPoint = pointManagement::create(['user_id'=>$request->id,
-                                         'points'=>20,
-                                         'point_type'=>'trial'
-                                                        ]);
-        payments::create([
-            'user_id'=>$request->id,
-            'pay_type'=>'free',
-            'cost'=>0,
-            'number_of_points'=>20,
-            'points_id'=>$trialPoint->id,
-        ]);
-        return response('',200);
+    public function grantingTrialPeriod(Request $request)
+    {
+        
+        $trialPoint =PointManagementController::addNewPoints( $request->id,10, 'trial');  // trial period is added with +10 points.
+        self::paymentRegister( $request->id, 10,$trialPoint, 'free' ,0);  
+       
+        $trialPoint =PointManagementController::addNewPoints( $request->id,10, 'trial-advanced');  // trial period is added with +10 points.
+        self::paymentRegister( $request->id, 10,$trialPoint, 'free' ,0);  
+        return response('', 201);
     }
-    public function addPointsToUser( Request $request){
-        $paidPoint = pointManagement::create(['user_id'=>$request->id,
-                                         'points'=>$request->points,
-                                         'point_type'=>'paid'
-                                                        ]);
-        payments::create([
-            'user_id'=>$request->id,
-            'pay_type'=>'cash',
-            'cost'=>$request->cost,
-            'number_of_points'=>$request->points,
-            'points_id'=>$paidPoint->id,
+    /**
+     * action to add point to user manualy 
+     */
+    public function addPointsToUser(Request $request)
+    {
+        $paidPoint = pointManagement::create([
+            'user_id' => $request->id,
+            'points' => $request->points,
+            'point_type' => $request->cost>0? "paid - $request->pointsType": "trial  - $request->pointsType"
         ]);
-        return response('',200);
+        payments::create([
+            'user_id' => $request->id,
+            'pay_type' => 'cash',
+            'cost' => $request->cost,
+            'number_of_points' => $request->points,
+            'points_id' => $paidPoint->id,
+        ]);
+        return response('', 201);
+    }
+
+    public static function  paymentRegister ($userId, $points, $points_id, $pay_type, $cost){
+       
+        payments::create([
+            'user_id' => $userId,
+            'pay_type' => $pay_type,
+            'cost' =>$cost,
+            'number_of_points' => $points,
+            'points_id' => $points_id,
+        ]);
     }
 }

@@ -32,5 +32,6 @@ Installation and Setup
 -  generate app key `php artisan key:generate`
 -  php artisan migrate
 -  php artisan db:seed
+-  php artisan l5-swagger:generate
 - php artisan serve --port 8089
 

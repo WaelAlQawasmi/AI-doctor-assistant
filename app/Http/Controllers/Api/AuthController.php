@@ -41,7 +41,81 @@ class AuthController extends Controller
         return response('',200);
     }
 
-
+   /**
+     * Register
+     * @OA\Post (
+     *     path="/auth/signup",
+     *     tags={"Auth"},
+     *     @OA\RequestBody(
+     *         @OA\MediaType(
+     *             mediaType="application/json",
+     *             @OA\Schema(
+     *                 @OA\Property(
+     *                      type="object",
+     *                      @OA\Property(
+     *                          property="name",
+     *                          type="string"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="email",
+     *                          type="string"
+     *                      ),
+     *                      @OA\Property(
+     *                          property="password",
+     *                          type="string"
+     *                      ),
+     *                    @OA\Property(
+     *                          property="phone",
+     *                          type="string"
+     *                      )
+     *                 ),
+     *                 example={
+     *                     "name":"John",
+     *                     "email":"john@test.com",
+     *                     "password":"johnjohn1",
+     *                     "phone":"0795755898",
+     * 
+     *                }
+     *             )
+     *         )
+     *      ),
+     * 
+     *
+     *      @OA\Response(
+     *          response=201,
+     *          description="Success",
+     *          @OA\JsonContent(
+     *              @OA\Property(property="meta", type="object",
+     *                  @OA\Property(property="code", type="number", example=201),
+     *                  @OA\Property(property="status", type="string", example="true"),
+     *                  @OA\Property(property="message", type="string", example="User Created Successfully"),
+     *                  @OA\Property(property="token", type="string", example="44|lNL2ioK5PlTIAefhhNNAXv3pfaWDqDBB5u1pbbXAb8b73f9"),
+     *              ),
+     *       
+     *      
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=400,
+     *          description="Bad Request",
+     *          @OA\JsonContent(
+     *              @OA\Property(property="meta", type="object",
+     *                  @OA\Property(property="status", type="string", example="false"),
+     *                  @OA\Property(property="message", type="string", example="validation error"),
+     *                  @OA\Property(property="errors", type="object",
+     *                      @OA\Property(property="email", type="array", collectionFormat="multi",
+     *                        @OA\Items(
+     *                          type="string",
+     *                          example="The email has already been taken.",
+     *                          )
+     *                      ),
+     *                  ),
+     *              ),
+     *              @OA\Property(property="data", type="object", example={}),
+     *          )
+     *      )
+     * )
+     */
 
     public function createUser(Request $request)
     {

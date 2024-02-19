@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Dashboard from "@/views/Dashboard.vue"
 import SignUp from "@/views/SignUp.vue"
+import Index from "@/views/Index.vue"
 import Login from "@/views/Login.vue"
 import UserManagement from "@/views/UserManagement.vue"
 const router = createRouter({
@@ -35,6 +36,11 @@ const router = createRouter({
             meta: {
                 authRequired: true
             }
+        }, {
+            path: "/index",
+            name: "Index",
+            component: Index,
+           
         },
     ]
 })

@@ -45,3 +45,6 @@ Installation and Setup
 -  php artisan l5-swagger:generate
 - php artisan serve --port 8089
 
+
+
+<center > <img  width="500" src ="./resources/img/swaggerApi.png"/> </center>

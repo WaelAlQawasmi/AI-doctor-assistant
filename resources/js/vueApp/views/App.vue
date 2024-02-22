@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar v-if="isAuthenticated" @logout="logout" />
+    <NavBar :isLogin="isAuthenticated" @logout="logout" />
     <router-view @logout="logout" @login="login" />
   </div>
 </template>

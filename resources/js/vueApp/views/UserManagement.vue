@@ -91,7 +91,7 @@
                                     <td>{{ user.email }}</td>
                                     <td>{{ user.phone }}</td>
                                     <td>{{ user.total_points }}</td>
-                                    <td>{{ user.is_active ? 'نشط' : "غير فعال" }}</td>
+                                    <td>{{ user.is_active==1 ? 'نشط' : "غير فعال" }}</td>
                                     <td>
                                         <ul class="list-inline mb-0">
 
@@ -115,7 +115,7 @@
                                                         @click="setUserToaddPoint(user.id )">
                                                         اضافة نقاط</button>
                                                     <a class="dropdown-item" v-if="user.role != 'admin'"
-                                                        @click="activation(user.id, user.is_active)">{{ user.is_active ? 'ايقاف التنشيط' : " تفعيل" }}</a>
+                                                        @click="activation(user.id, user.is_active)">{{ user.is_active == 1 ? 'ايقاف التنشيط' : " تفعيل" }}</a>
                                                     <a class="dropdown-item" v-if="user.role != 'admin' &&  getPackagesType(user.packagesType)=='No Packages' "
                                                         @click="grantingTrialPeriod(user.id)"> {{ 'منح نسخة تجريبية '}}</a>
                                                 </div>
@@ -204,7 +204,7 @@ export default {
         async activation (id,is_active){
             try {
                 let url="auth/activate";
-                if(is_active){
+                if(is_active==1){
                     url="auth/deactivate";
                 }
                 var response = await postData(url, {

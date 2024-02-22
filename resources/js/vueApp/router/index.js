@@ -8,7 +8,7 @@ const router = createRouter({
     history: createWebHistory('/'),
     routes: [
         {
-            path: '/',
+            path: '/dashboard',
             name: 'dashboard',
             component: Dashboard,
             meta: {
@@ -37,7 +37,7 @@ const router = createRouter({
                 authRequired: true
             }
         }, {
-            path: "/index",
+            path: "/",
             name: "Index",
             component: Index,
            
@@ -53,7 +53,7 @@ router.beforeEach(async(to) => {
         return '/login';
     }
     if (localStorage.getItem("isAuth") && (authRequired != true && authRequired != 'both') ){
-        return '/';
+        return '/dashboard';
     }
 
 });

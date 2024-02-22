@@ -8,6 +8,15 @@
     <title>AI-Doctor-Assistant </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="">
+    <meta name="description" content="The Medical Diagnosis Assistance System is a web application designed to assist doctors in diagnosing medical conditions more efficiently.">
+    <meta property="og:description" content="The Medical Diagnosis Assistance System is a web application designed to assist doctors in diagnosing medical conditions more efficiently.">
+    <meta property="twitter:description" content="The Medical Diagnosis Assistance System is a web application designed to assist doctors in diagnosing medical conditions more efficiently.">
+    <meta name="description" content="نظام مساعدة التشخيص الطبي هو تطبيق ويب مصمم لمساعدة الأطباء في تشخيص الحالات الطبية بكفاءة أكبر.">
+    <meta property="og:description" content="نظام مساعدة التشخيص الطبي هو تطبيق ويب مصمم لمساعدة الأطباء في تشخيص الحالات الطبية بكفاءة أكبر.">
+    <meta property="twitter:description" content="نظام مساعدة التشخيص الطبي هو تطبيق ويب مصمم لمساعدة الأطباء في تشخيص الحالات الطبية بكفاءة أكبر.">
+    <meta name="keywords" content="Medical Diagnosis, Diagnosis Assistance, Doctors, Medical Conditions, Healthcare, Web Application, Efficient Diagnosis, نظام المساعدة في تشخيص الأمراض، الطبي، التشخيص الطبي، الذكاء الصناعي، الأطباء، تشخيص الأمراض، الطب، الأمراض الطبية، Medical Diagnosis Assistance System, Medical, Diagnosis, AI, Doctors, Disease Diagnosis, Medicine, Medical Conditions, تشخيص طبي، مساعدة في التشخيص، أطباء، حالات طبية، رعاية صحية، تطبيق ويب، تشخيص فعّال">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Cairo:wght@200&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
@@ -16,6 +25,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     {{-- <link rel="stylesheet" href="../css/app.css"> --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/robotDoctor-logo.png') }}">
 
     <!-- Styles -->
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> --}}

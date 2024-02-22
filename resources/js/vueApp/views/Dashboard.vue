@@ -11,7 +11,7 @@
                                 <h4 class="card-title" > معلومات الطبيب</h4>
                             </div>
                             <div class="card-body user-profile-card mb-3" >
-                                <img :src="doctorAi" class="user-profile-image rounded-circle" alt="" />
+                                <img :src="doctorAi" class="user-profile-image rounded-circle" alt="" style=" display: inline-block;" />
                                 <span id="dr_info">
                                     <h4 class="text-center h6 mt-2">{{ name }} </h4>
                                     <p class="text-center small" v-if="specialty = ''"> {{ specialty }}</p>
@@ -107,7 +107,7 @@
                                     <div class="card card-white grid-margin" style="height: 97%;">
                                         <div class="card-body" id="aiBot">
                                             <img v-show="showAi" src="../img/bot.gif" class="ml-5" height="200" alt="logo"
-                                                style="position: relative;right: 34%;">
+                                                style="position: relative;left: 25%;">
                                             <div v-if="binding.length > 0" v-for="(item, index) in medicalDiagnosisKeys "
                                                 :key="index" class="timeline-comment">
                                                 <div class="timeline-comment-header">
@@ -138,8 +138,7 @@ import 'intro.js/introjs.css';
 import { fetchData, postData } from '@/router/requestActions.js';
 export default {
     emits: ['logout', 'login'],
-    mounted() {
-    },
+    
     data() {
         return {
             gender: '',

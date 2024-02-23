@@ -15,7 +15,7 @@
                 </a>
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="../img/robotDoctor-logo.png" alt="mockup">
+                <img  loading="lazy" src="../img/robotDoctor-logo.png" alt="mockup">
             </div>
         </div>
     </section>
@@ -89,8 +89,8 @@
                     severity of symptoms, patient history, and other information to offer accurate suggestions</p>
             </div>
             <div class="grid grid-cols-2 gap-4 mt-8">
-                <img class="w-full rounded-lg" src="../img/doctorAi.png" alt="office content 1">
-                <img class="mt-4 w-full rounded-lg lg:mt-10" src="../img/DOCKTORwithrobot.png" alt="office content 2">
+                <img  loading="lazy" class="w-full rounded-lg" src="../img/doctorAi.png" alt="office content 1">
+                <img  loading="lazy" class="mt-4 w-full rounded-lg lg:mt-10" src="../img/DOCKTORwithrobot.png" alt="office content 2">
             </div>
         </div>
     </section>
@@ -129,7 +129,7 @@
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a class="flex items-center">
-                        <img src="../img/robotDoctor-logo.png" class="mr-3 h-8" alt="AI Doctor Assistant Logo" />
+                        <img  loading="lazy" src="../img/robotDoctor-logo.png" class="mr-3 h-8" alt="AI Doctor Assistant Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AI Doctor
                             Assistant</span>
                     </a>

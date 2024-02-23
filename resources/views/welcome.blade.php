@@ -8,11 +8,10 @@
     <title>AI-Doctor-Assistant </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="">
-    <meta name="description" content="The Medical Diagnosis Assistance System is a web application designed to assist doctors in diagnosing medical conditions more efficiently.">
     <meta property="og:description" content="The Medical Diagnosis Assistance System is a web application designed to assist doctors in diagnosing medical conditions more efficiently.">
     <meta property="twitter:description" content="The Medical Diagnosis Assistance System is a web application designed to assist doctors in diagnosing medical conditions more efficiently.">
-    <meta name="description" content="نظام مساعدة التشخيص الطبي هو تطبيق ويب مصمم لمساعدة الأطباء في تشخيص الحالات الطبية بكفاءة أكبر.">
+    <meta name="description" content=" The Medical Diagnosis Assistance System is a web application designed to assist doctors in diagnosing medical conditions more efficiently.
+    نظام مساعدة التشخيص الطبي هو تطبيق ويب مصمم لمساعدة الأطباء في تشخيص الحالات الطبية بكفاءة أكبر.">
     <meta property="og:description" content="نظام مساعدة التشخيص الطبي هو تطبيق ويب مصمم لمساعدة الأطباء في تشخيص الحالات الطبية بكفاءة أكبر.">
     <meta property="twitter:description" content="نظام مساعدة التشخيص الطبي هو تطبيق ويب مصمم لمساعدة الأطباء في تشخيص الحالات الطبية بكفاءة أكبر.">
     <meta name="keywords" content="Medical Diagnosis, Diagnosis Assistance, Doctors, Medical Conditions, Healthcare, Web Application, Efficient Diagnosis, نظام المساعدة في تشخيص الأمراض، الطبي، التشخيص الطبي، الذكاء الصناعي، الأطباء، تشخيص الأمراض، الطب، الأمراض الطبية، Medical Diagnosis Assistance System, Medical, Diagnosis, AI, Doctors, Disease Diagnosis, Medicine, Medical Conditions, تشخيص طبي، مساعدة في التشخيص، أطباء، حالات طبية، رعاية صحية، تطبيق ويب، تشخيص فعّال">
@@ -52,13 +51,9 @@
         <!-- Vue.js components will be processed here. -->
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">

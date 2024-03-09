@@ -26,10 +26,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/auth/signup', [AuthController::class, 'createUser']);
 Route::post('/auth/login', [AuthController::class, 'loginUser']);
-Route::get('/auth/get-all-users', [AuthController::class, 'getAllusers'])->middleware('auth:sanctum');
-Route::get('/auth/getUsrById/{id}', [AuthController::class, 'getUsrById'])->middleware('auth:sanctum');
-Route::get('/auth/getUsrByname/{name}', [AuthController::class, 'getUsrByName'])->middleware('auth:sanctum');
+
+
 Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('/auth/get-all-users', [AuthController::class, 'getAllusers'])->middleware('can:manage users');
+    Route::get('/auth/getUsrById/{id}', [AuthController::class, 'getUsrById'])->middleware('can:manage users');
+    Route::get('/auth/getUsrByname/{name}', [AuthController::class, 'getUsrByName'])->middleware('can:manage users');
     Route::post('/auth/activate', [AuthController::class, 'activateUser']);
     Route::post('/auth/deactivate', [AuthController::class, 'deactivateUser']);
     Route::get('/point-management/users-with-points', [PointManagementController::class, 'getAllusersWithPoints'])->middleware(['can:manage users']);

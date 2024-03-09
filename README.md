@@ -45,6 +45,92 @@ Installation and Setup
 -  php artisan l5-swagger:generate
 - php artisan serve --port 8089
 
-
+## API Documentation 
+I built API documentation using swagger also available in  this documentation:
 
 <center > <img  width="500" src ="./resources/img/swaggerApi.png"/> </center>
+
+
+
+## Authentication
+
+### Signup
+- **Method:** POST
+- **Endpoint:** /auth/signup
+- **Parameters:**
+  - `name`: Required
+  - `email`: Required, Email format, Unique
+  - `password`: Required
+  - `phone`: Required
+
+### Login
+- **Method:** POST
+- **Endpoint:** /auth/login
+- **Parameters:**
+  - `email`: Required
+  - `password`: Required
+
+### Activate User Account
+- **Method:** POST
+- **Endpoint:** /auth/activate
+- **Permissions Required:** Manage Users
+- **Parameters:**
+  - `userId`: User ID to activate the account
+
+## Payments
+
+### Add Points to User
+- **Method:** POST
+- **Endpoint:** /payments/add-points-to-user
+- **Permissions Required:** Manage Users
+- **Parameters:**
+  - `number_of_points`
+  - `cost`
+  - `user_id`
+  - `pay_type`
+  - `point_type`
+
+### Granting Trial Period
+- **Method:** POST
+- **Endpoint:** /payments/granting-trial-period
+- **Permissions Required:** Manage Users
+- **Parameters:**
+  - `user_id`
+
+## User Management
+
+### Get User by ID
+- **Method:** GET
+- **Endpoint:** /auth/getUsrById/{id}
+- **Permissions Required:** Manage Users or Same ID as Login User
+- **Parameters:**
+  - `id`: User ID
+
+### Get All Users
+- **Method:** GET
+- **Endpoint:** /auth/get-all-users
+- **Permissions Required:** Manage Users
+
+### Get Users with Points and Packages
+- **Method:** GET
+- **Endpoint:** /point-management/users-with-points
+
+## User Profile
+
+### Get User Profile
+- **Method:** GET
+- **Endpoint:** /main-page/userProfile
+- **Permissions Required:** Login User
+
+## Medical Diagnosis
+
+### Request AI Medical Diagnosis
+- **Method:** POST
+- **Endpoint:** /medical-diagnosis
+- **Parameters:**
+  - `oldResults`
+  - `affectFactors`
+  - `history`
+  - `symptoms`
+  - `gender`
+  - `AdvancedReponse`

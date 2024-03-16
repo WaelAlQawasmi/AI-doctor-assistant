@@ -31,6 +31,9 @@ Installation and Setup
 
 <center > <img  width="500" src ="./resources/img/responseEn.png"/> </center>
 
+## Integration
+-  <img style="margin-right:10px;" width="35" src ="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png"/>  The application integrates with openAI (chatGpt) 
+-  <img style="margin-right:10px;" width="35" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsT9VojMYDl1a35sEilgC3W64KiQfj5cKBrEuobZD6w&s"/>  The application integrates with openAI (PayPal) 
 
 ## How to set up 
 - composer install --no-dev
@@ -135,3 +138,9 @@ I built API documentation using swagger also available in  this documentation:
   - `symptoms`
   - `gender`
   - `AdvancedReponse`
+
+  ##  Feature & Unit Tests
+  To run feature & unit  tests
+> php artisan test
+
+  ![](./resources/img/unittest.png)

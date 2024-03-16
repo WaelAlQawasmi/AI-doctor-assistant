@@ -16,6 +16,13 @@ class RoleSeeder extends Seeder
     public function run(): void
     {
         $user = User::create([
+            'name' => ' test user',
+            'email' => 'tes2tuser20@mail.com',
+            'password' => bcrypt('qaw78/****'),
+            'is_active'=>true,
+            'phone'=>'0787809906',
+            ]);
+        $user = User::create([
             'name' => 'Super Admin',
             'email' => 'admin@infinta-jo.com',
             'password' => bcrypt('infinta2023'),

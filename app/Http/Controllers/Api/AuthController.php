@@ -138,13 +138,13 @@ class AuthController extends Controller
             }
             $isActive=false;
             $userRole='doctor';
-           // if (Auth::guard('sanctum')->check()) {
-           //     if(Auth::guard('sanctum')->user()->hasPermissionTo('create doctor user'))
-                //    $isActive=true;
-            //    if( Auth::guard('sanctum')->user()->hasPermissionTo('sensitive data'))
-                    $userRole=$request->role;
+           if (Auth::guard('sanctum')->check()) {
+               if(Auth::guard('sanctum')->user()->hasPermissionTo('create doctor user'))
+                   $isActive=true;
+               if( Auth::guard('sanctum')->user()->hasPermissionTo('sensitive data'))
+                   $userRole=$request->role;
                 
-           // }
+           }
 
             $user = User::create([
                 'name' => $request->name,

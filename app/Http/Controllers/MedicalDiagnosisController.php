@@ -10,11 +10,14 @@ use OpenAI;
 
 class MedicalDiagnosisController extends Controller
 {
- 
-
+    /**
+     * action to get   medical Diagnosis based on user input from openAI LLM.
+    */
     public function getBasicAIDiagnosis(Request $request)
     {
+        // check if the user  is authenticated or not by check if has points
         $this->authorize('BasicAIDiagnosis',[ User::class, $request->AdvancedReponse]);
+        // AI LLM prompt
         $prompt = "   
             يقوم مساعد التشخيص الطبي بمساعدة الأطباء المختصين في تحديد الأمراض المحتملة للمرضى. 
             بناءً على المعلومات التالية:

@@ -33,7 +33,7 @@ Installation and Setup
 
 ## Integration
 -  <img style="margin-right:10px;" width="35" src ="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png"/>  The application integrates with openAI (chatGpt) 
--  <img style="margin-right:10px;" width="35" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsT9VojMYDl1a35sEilgC3W64KiQfj5cKBrEuobZD6w&s"/>  The application integrates with openAI (PayPal) 
+-  <img style="margin-right:10px;" width="35" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsT9VojMYDl1a35sEilgC3W64KiQfj5cKBrEuobZD6w&s"/>  The application integrates with PayPal (Payment gatway) 
 
 ## How to set up 
 - composer install --no-dev

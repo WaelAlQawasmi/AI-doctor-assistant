@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\DB;
 
 class PointManagementController extends Controller
 {
+    /**
+     * this haction for all data of  point management in admin panel.
+     */
     public function getAllusersWithPoints()
     {
         $usersWithPoints = User::leftJoin('point_management', 'users.id', '=', 'point_management.user_id')
@@ -51,7 +54,9 @@ class PointManagementController extends Controller
 
         return response()->json($allUsers, 200);
     }
-
+/**
+ * this action to add point for user
+ */
     public static function  addNewPoints($userId, $points, $pointType){
         $trialPoint = pointManagement::create([
             'user_id' => $userId,

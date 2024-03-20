@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class PaymentsController extends Controller
 {
+    /**
+     * this action to granting Trial Period for the user to has access to
+     * AI system
+     */
     public function grantingTrialPeriod(Request $request)
     {
         
@@ -37,7 +41,9 @@ class PaymentsController extends Controller
         ]);
         return response('', 201);
     }
-
+/**
+ * this function to log payment
+ */
     public static function  paymentRegister ($userId, $points, $points_id, $pay_type, $cost){
        
         payments::create([

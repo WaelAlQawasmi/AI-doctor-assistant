@@ -9,7 +9,7 @@ class PointsPolicy
 {
     /**
      * Create a new policy instance.
-     */
+    */
 
      public function BasicAIDiagnosis(User $user, String $AdvancedReponse)
      {

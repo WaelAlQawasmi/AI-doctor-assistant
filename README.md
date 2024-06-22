@@ -145,6 +145,7 @@ I built API documentation using swagger also available in  this documentation:
    >/graphiql
   
   ![](./resources/img/grapgQlPlay.png)
+  ![](./resources/img/grapgQlPlay2.png)
 
    ##  Feature & Unit Tests
   To run feature & unit  tests

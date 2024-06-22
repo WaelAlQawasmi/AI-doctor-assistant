@@ -1,0 +1,13 @@
+type Query {
+    "Find a single Disease by the name attribute."
+     Disease(name: String! @eq): Disease @find
+    "List multiple Disease."
+    Diseases(name: String ): [Disease!]! @all
+}
+
+type Disease {
+    name: String!
+    description: String!
+    symptoms: String!
+    treatment: String!
+}

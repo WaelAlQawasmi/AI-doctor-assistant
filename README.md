@@ -139,7 +139,14 @@ I built API documentation using swagger also available in  this documentation:
   - `gender`
   - `AdvancedReponse`
 
-  ##  Feature & Unit Tests
+
+  ## GraphQl API
+   I created __GraphQl API__ to search on common Diseases on DB 
+   >/graphiql
+  
+  ![](./resources/img/grapgQlPlay.png)
+
+   ##  Feature & Unit Tests
   To run feature & unit  tests
 > php artisan test
 

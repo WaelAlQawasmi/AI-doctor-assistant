@@ -13,10 +13,11 @@ type Disease {
 }
 
 
-########################## query #################################
+########################## query , fragment , directive , variables, Aliases ,Argument  #################################
 # query GetDisease($DiseaseName: String!, $isBrief: Boolean!) {
 #   Brief: FindDisease(name: $DiseaseName) {
 #     ...Brief @include(if: $isBrief)
+#     ... on Disease { name}   # inline fragment
 #   }
 #   Details: FindDisease(name: $DiseaseName) {
 #     treatment @skip(if: $isBrief)

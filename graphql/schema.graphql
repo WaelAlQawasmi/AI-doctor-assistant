@@ -1,8 +1,8 @@
 type Query {
     "Find a single Disease by the name attribute."
-     Disease(name: String! @eq): Disease @find
+    FindDisease(name: String! @eq): Disease @find
     "List multiple Disease."
-    Diseases(name: String ): [Disease!]! @all
+    GetAllDiseases(name: String ): [Disease!]! @all
 }
 
 type Disease {
@@ -11,3 +11,21 @@ type Disease {
     symptoms: String!
     treatment: String!
 }
+
+
+########################## query #################################
+# query GetDisease($DiseaseName: String!, $isBrief: Boolean!) {
+#   Brief: FindDisease(name: $DiseaseName) {
+#     ...Brief @include(if: $isBrief)
+#   }
+#   Details: FindDisease(name: $DiseaseName) {
+#     treatment @skip(if: $isBrief)
+#     symptoms @skip(if: $isBrief)
+#   }
+# }
+
+# fragment Brief on Disease {
+#   name
+#   description
+# }
+#####################################################################

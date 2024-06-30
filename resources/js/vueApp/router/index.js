@@ -3,6 +3,7 @@ import Dashboard from "@/views/Dashboard.vue"
 import SignUp from "@/views/SignUp.vue"
 import Index from "@/views/Index.vue"
 import Login from "@/views/Login.vue"
+import DiseaseSearch from "@/views/DiseaseSearch.vue"
 import UserManagement from "@/views/UserManagement.vue"
 const router = createRouter({
     history: createWebHistory('/'),
@@ -40,6 +41,11 @@ const router = createRouter({
             path: "/",
             name: "Index",
             component: Index,
+           
+        }, {
+            path: "/disease-search",
+            name: "DiseaseSearch",
+            component: DiseaseSearch,
            
         },
     ]

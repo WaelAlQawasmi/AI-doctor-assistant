@@ -141,11 +141,13 @@ I built API documentation using swagger also available in  this documentation:
 
 
   ## GraphQl API
-   I created __GraphQl API__ to search on common Diseases on DB 
-   >/graphiql
-  
-  ![](./resources/img/grapgQlPlay.png)
-  ![](./resources/img/grapgQlPlay2.png)
+   I created __GraphQl API__ to search on common Diseases on DB search 
+   
+ - suggestions and search results for any selected Diseases
+
+   ![](./resources/img/searshGraphQl.png)
+
+
 
    ##  Feature & Unit Tests
   To run feature & unit  tests

@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
+use App\Http\Resources\UserResource;
 use App\Models\doctorDetails;
 use App\Models\pointManagement;
 use App\Models\User;
+use App\Services\AuthService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -14,6 +17,16 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+
+
+    
+    protected $authService;
+
+    public function __construct(AuthService $authService)
+    {
+        $this->authService = $authService;
+    }
+
      /**
      * Create User
      * @param Request $request
@@ -179,63 +192,27 @@ class AuthController extends Controller
 
     /**
      * Login The User
-     * @param Request $request
+     * @param LoginRequest $request
      * @return User
      */
-    public function loginUser(Request $request)
+    public function loginUser(LoginRequest $request)
     {
+        $credentials = $request->only('email', 'password');
         try {
-            $validateUser = Validator::make($request->all(), 
-            [
-                'email' => 'required|email',
-                'password' => 'required'
-            ]);
+            $result = $this->authService->login($credentials);
 
-            if($validateUser->fails()){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'validation error',
-                    'errors' => $validateUser->errors()
-                ], 401);
-            }
+            return response()->json([
+                'logedInUser' => new UserResource($result['user'], $result['permissions']),
+                'token' => $result['token'],
+            ], 200);
 
-            $credentials = $request->only('email', 'password');
-
-            if (Auth::attempt($credentials)) {
-                $user = Auth::user();
-                $user->tokens()->delete();
-                if (!$user->is_active)
-                    return response()->json(['status'=>false,'message'=>"Your account is not active."],401);
-
-                $token = $user->createToken('token-name')->plainTextToken;
-                $logedInUser=  $user;
-                $permissions =[];
-                foreach ( $logedInUser->getPermissionsViaRoles() as $item) {
-                    $permissions[] = $item['name'];
-                }
-                return response()->json([
-                    'logedInUser' =>[
-                        'id' => $logedInUser->id,
-                        'name' => $logedInUser->name,
-                        'phone'=> $logedInUser->phone,
-                        'email' =>  $logedInUser->email,
-                        'is_active'=>  $logedInUser-> is_active,
-                        'role'=> $logedInUser-> roles[0]->name,
-                        'permissions' => $permissions,
-                    ],
-                    'token' => $token
-                ], 200);
-    
-            }
-    
-            return response()->json(['message' => 'Unauthorized'], 401);
-
-        } catch (\Throwable $th) {
+        } catch (\Throwable $e) {
             return response()->json([
                 'status' => false,
-                'message' => $th->getMessage()
+                'message' => $e->getMessage(),
             ], 500);
         }
+
     }
 
     public function getUserProfile(){

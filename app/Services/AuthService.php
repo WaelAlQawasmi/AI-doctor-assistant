@@ -3,7 +3,10 @@ namespace App\Services;
 
 use Illuminate\Support\Facades\Auth;
 use App\Http\Resources\UserResource;
+use App\Models\doctorDetails;
+use App\Models\User;
 use Exception;
+use Illuminate\Support\Facades\Hash;
 
 class AuthService
 {
@@ -36,5 +39,27 @@ class AuthService
             'permissions' => $permissions,
             'token' => $token,
         ];
+    }
+
+    public function createUser($request,$isActive,$userRole)
+    {
+        $user = User::create([
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'is_active'=>$isActive,
+        ]);
+
+        $user->assignRole($userRole);
+        if($request->role=='doctor'){
+            doctorDetails::create([
+                'user_id' => $user->id,
+                'city' => $request->city,
+                'specialty' => $request->specialty,
+                'location' => $request->location,]);
+        }
+        return $user;
+
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateUserRequest;
 use App\Http\Requests\LoginRequest;
 use App\Http\Resources\UserResource;
 use App\Models\doctorDetails;
@@ -130,52 +131,18 @@ class AuthController extends Controller
      * )
      */
 
-    public function createUser(Request $request)
+    public function createUser(CreateUserRequest $request)
     {
         try {
-            //Validated
-            $validateUser = Validator::make($request->all(), 
-            [
-                'name' => 'required',
-                'email' => 'required|email|unique:users,email',
-                'password' => 'required',
-                'phone' => 'required'
-            ]);
-
-            if($validateUser->fails()){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'validation error',
-                    'errors' => $validateUser->errors()
-                ], 400);
-            }
             $isActive=false;
             $userRole='doctor';
            if (Auth::guard('sanctum')->check()) {
                if(Auth::guard('sanctum')->user()->hasPermissionTo('create doctor user'))
                    $isActive=true;
                if( Auth::guard('sanctum')->user()->hasPermissionTo('sensitive data'))
-                   $userRole=$request->role;
-                
+                   $userRole=$request->role;   
            }
-
-            $user = User::create([
-                'name' => $request->name,
-                'phone' => $request->phone,
-                'email' => $request->email,
-                'password' => Hash::make($request->password),
-                'is_active'=>$isActive,
-            ]);
-
-            $user->assignRole($userRole);
-            if($request->role=='doctor'){
-                doctorDetails::create([
-                    'user_id' => $user->id,
-                    'city' => $request->city,
-                    'specialty' => $request->specialty,
-                    'location' => $request->location,]);
-            }
-
+           $user = $this->authService->createUser($request,$isActive,$userRole);
             return response()->json([
                 'status' => true,
                 'message' => 'User Created Successfully',

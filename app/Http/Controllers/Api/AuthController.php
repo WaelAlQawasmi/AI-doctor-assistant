@@ -10,6 +10,7 @@ use App\Models\doctorDetails;
 use App\Models\pointManagement;
 use App\Models\User;
 use App\Services\AuthService;
+use App\Services\PointsService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -21,11 +22,10 @@ class AuthController extends Controller
 
 
     
-    protected $authService;
 
-    public function __construct(AuthService $authService)
+    public function __construct( protected AuthService $authService , protected PointsService $pointsService)
     {
-        $this->authService = $authService;
+    
     }
 
      /**
@@ -183,14 +183,13 @@ class AuthController extends Controller
     }
 
     public function getUserProfile(){
-        $user=User::select('phone','name','is_active','email','id')->find(Auth::id());
+        $user= User::select('phone','name','is_active','email','id')->find(Auth::id());
         $logedInUser=[
             'name'=>$user->name,
             'phone'=>$user->phone,
             'email'=>$user->email,
-
         ];
-        $points = pointManagement::where('user_id',$user->id)->where('points','>',0)->select('points','point_type')->get();
+        $points = $this->pointsService->getPoints($user->id);
         $userProfile=['logedInUser'=>$logedInUser,'points'=>$points];
         if(!$user->hasAnyRole(['admin', 'TechnicalAssistant'])){
             $userProfile['doctor']=doctorDetails::where('user_id',$user->id)->get();

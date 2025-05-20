@@ -299,6 +299,8 @@ export default {
             try {
 
                 var userData = await fetchData('main-page/userProfile');
+                console.log(userData.data)
+                userData = userData.data;
                 this.name = userData.logedInUser.name
                 this.email = userData.logedInUser.email
                 this.phone = userData.logedInUser.phone

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateUserRequest;
 use App\Http\Requests\LoginRequest;
+use App\Http\Resources\UserProfileResource;
 use App\Http\Resources\UserResource;
 use App\Models\doctorDetails;
 use App\Models\pointManagement;
@@ -183,18 +184,35 @@ class AuthController extends Controller
     }
 
     public function getUserProfile(){
-        $user= User::select('phone','name','is_active','email','id')->find(Auth::id());
-        $logedInUser=[
-            'name'=>$user->name,
-            'phone'=>$user->phone,
-            'email'=>$user->email,
-        ];
+
+        $user = $this->authService->getUserById(Auth::id());
         $points = $this->pointsService->getPoints($user->id);
-        $userProfile=['logedInUser'=>$logedInUser,'points'=>$points];
-        if(!$user->hasAnyRole(['admin', 'TechnicalAssistant'])){
-            $userProfile['doctor']=doctorDetails::where('user_id',$user->id)->get();
+
+        $doctorDetails = null;
+        if (!$user->hasAnyRole(['admin', 'TechnicalAssistant'])) {
+            $doctorDetails = \App\Models\DoctorDetails::where('user_id', $user->id)->get();
         }
-        return response()->json($userProfile,200);
+
+        return new UserProfileResource([
+            'user' => $user,
+            'points' => $points,
+            'doctor' => $doctorDetails
+        ]);
+
+
+
+        // $user=$this->authService->getUserById(Auth::id());
+        // $logedInUser=[
+        //     'name'=>$user->name,
+        //     'phone'=>$user->phone,
+        //     'email'=>$user->email,
+        // ];
+        // $points = $this->pointsService->getPoints($user->id);
+        // $userProfile=['logedInUser'=>$logedInUser,'points'=>$points];
+        // if(!$user->hasAnyRole(['admin', 'TechnicalAssistant'])){
+        //     $userProfile['doctor']=doctorDetails::where('user_id',$user->id)->get();
+        // }
+        // return response()->json($userProfile,200);
     }
 }
 

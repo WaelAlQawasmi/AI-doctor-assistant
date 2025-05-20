@@ -62,4 +62,8 @@ class AuthService
         return $user;
 
     }
+
+    public function getUserById($userId){
+        return User::select('phone','name','is_active','email','id')->find($userId);
+    }
 }

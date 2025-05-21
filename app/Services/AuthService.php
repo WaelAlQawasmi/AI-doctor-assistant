@@ -66,4 +66,10 @@ class AuthService
     public function getUserById($userId){
         return User::select('phone','name','is_active','email','id')->find($userId);
     }
+
+    public function updateUserActivation($userId,$isActive) {
+        $user = User::find($userId);
+        $user->is_active=$isActive;
+        $user->save(); 
+    }
 }

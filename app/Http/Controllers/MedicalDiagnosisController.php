@@ -3,12 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AIDiagnosisRequest;
-use App\Http\Resources\AIDiagnosisResource;
-use App\Models\medicalDiagnosis;
 use App\Models\User;
 use App\Services\AIDiagnosisService;
 use Exception;
-use OpenAI;
 
 class MedicalDiagnosisController extends Controller
 {

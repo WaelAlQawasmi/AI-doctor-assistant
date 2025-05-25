@@ -52,16 +52,4 @@ class PointManagementController extends Controller
 
         return response()->json($allUsers, 200);
     }
-/**
- * this action to add point for user
- */
-    public static function  addNewPoints($userId, $points, $pointType){
-        $trialPoint = pointManagement::create([
-            'user_id' => $userId,
-            'points' => $points,
-            'point_type' => $pointType
-        ]);
-        return  $trialPoint->id;
-        
-    }
 }

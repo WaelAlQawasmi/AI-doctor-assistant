@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
-use App\Http\Controllers\MedicalDiagnosisController;
-use App\Http\Controllers\PaymentsController;
-use App\Http\Controllers\PointManagementController;
+use App\Http\Controllers\Api\MedicalDiagnosisController;
+use App\Http\Controllers\Api\PaymentsController;
+use App\Http\Controllers\Api\PointManagementController;
 use App\Http\Middleware\CookieToHeaderToken;
 
 use Illuminate\Http\Request;

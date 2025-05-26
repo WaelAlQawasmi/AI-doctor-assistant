@@ -1635,3 +1635,705 @@
 [30-Jun-2024 20:01:38 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
 [30-Jun-2024 20:01:39 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
 [30-Jun-2024 20:01:40 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:12 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:12 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:13 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:13 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:13 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:23 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:23 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:23 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:23 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:23 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:24 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:36 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:36 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:37 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:37 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:37 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:18:37 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:18:38 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:19:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:19:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:19:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:19:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:20:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:20:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:20:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:20:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:20:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:20:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:20:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:20:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:20:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:20:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:20:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:20:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:20:58 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:21:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:21:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:21:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:21:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:21:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:21:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:21:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:21:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:21:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:21:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:21:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:21:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:21:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:22:04 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:22:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:22:08 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in C:\Apache\htdocs\dockerAssesstent\app\Http\Resources\UserResource.php on line 27
+[17-May-2025 11:22:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:22:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:31 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:31 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:32 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:44 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:44 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:44 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:44 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:45 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:45 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:45 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:45 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:45 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:45 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:45 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:46 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:51 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:23:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:23:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:26:33 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:26:33 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:26:39 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:26:39 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:26:39 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:26:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:26:43 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:26:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:27:47 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:27:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:27:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:27:52 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:27:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:27:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:42:29 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:42:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:42:34 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:45:53 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:45:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:45:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:45:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:45:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:46:00 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[17-May-2025 11:46:00 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[17-May-2025 11:46:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:11:53 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:11:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:11:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:11:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:11:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:11:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:11:56 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:11:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:11:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:11:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:11:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:11:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:11:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:05 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:12:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:13 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:12:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:19 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:12:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:19 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:12:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:19 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[19-May-2025 16:12:20 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[19-May-2025 16:12:23 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:01 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:03 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:03 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:03 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:09 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:09 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:17 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:18 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:23 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:23 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:24 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:24 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:24 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:25 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:25 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:25 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:30 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:52:30 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:52:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:24 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:24 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:25 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:25 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:25 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:26 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:26 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:29 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:29 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:30 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:53 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:59 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:59 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:59 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:53:59 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:53:59 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:38 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:39 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:39 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:39 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:39 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:40 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:40 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:40 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:43 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:43 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:48 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:48 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:49 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:54:49 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:54:49 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:04 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:05 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:05 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:05 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:06 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:06 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:06 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:11 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:57:11 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:57:12 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:16 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:16 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:16 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:16 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:17 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:17 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:17 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:18 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:18 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:22 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:22 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:22 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 07:59:22 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 07:59:23 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:29 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:29 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:30 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:30 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:31 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:31 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:31 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:31 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:31 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:31 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:31 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:31 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:32 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:35 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:35 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:36 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:00:36 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:00:36 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:45 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:46 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:47 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:47 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:47 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:47 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:48 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:48 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:48 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:51 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:51 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:51 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:01:51 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:01:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:01 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:03 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:03 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:03 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:04 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:04 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:07 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:07 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:03:08 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:03:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:24 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:24 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:25 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:26 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:26 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:26 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:26 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:27 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:30 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:31 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:31 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:47 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[20-May-2025 08:04:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[20-May-2025 08:04:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 07:59:50 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 07:59:50 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 07:59:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 07:59:53 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 07:59:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 07:59:53 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 07:59:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 07:59:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 07:59:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 07:59:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 07:59:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 07:59:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 07:59:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:00:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:00:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:00:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:00:59 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:00 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:04 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:04 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:09 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:12 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:12 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:12 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:17 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:17 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:18 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:36 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:36 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:39 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:40 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:01:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:01:44 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:02:51 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:02:51 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:08 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:09 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:09 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:09 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:10 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:10 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:10 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:10 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:10 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:03:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:03:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:08:56 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:08:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:09:04 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:09:45 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:09:45 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:09:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:09:53 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:09:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:09:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:11:58 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:11:58 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:12:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:12:05 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:12:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:12:10 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:31 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:23:31 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:36 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:37 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:23:37 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:23:41 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:24:16 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:24:16 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:24:21 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:24:21 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:24:22 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:24:22 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:24:22 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:24:22 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:24:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:26:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:26:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:26:26 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:26:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:26:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:26:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:26:27 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:26:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:26:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:06 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:35:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:21 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:21 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:21 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:22 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:22 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:35:22 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:25 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:28 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:35:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:29 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:34 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:35:35 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:46 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:35:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:35:50 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:00 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:00 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:01 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:01 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:03 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:06 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:06 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:37:54 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:37:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:10 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:11 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:38:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:11 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:38:12 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:38:46 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:38:46 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:39:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:39:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:39:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:39:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:39:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:39:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:39:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:39:59 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:39:59 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:40:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:40:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:40:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:40:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:40:11 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:40:12 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:40:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:43:58 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:43:58 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:44:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:44:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:44:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:44:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:44:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:44:14 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:44:14 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:44:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:46:57 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:46:57 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:07 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:07 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:08 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:47:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:11 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:39 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:47:39 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:51 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:51 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:51 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:51 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:52 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:47:52 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:47:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:48:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:48:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:48:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:48:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:48:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:48:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:48:28 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:48:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:48:32 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:49:44 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:49:44 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:49:54 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:49:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:49:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:49:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:49:55 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:49:55 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:49:58 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:51:27 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:51:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:51:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:51:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:51:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:51:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:51:40 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:51:40 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:51:44 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:52:36 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:52:36 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:52:49 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:52:49 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:52:49 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:52:49 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:52:49 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:52:50 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:52:53 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:53:29 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:53:29 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:53:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:53:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:53:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:53:43 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:53:43 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:53:44 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:53:47 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:13 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:13 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:14 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:14 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:14 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:16 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:16 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:16 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:19 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 08:59:19 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 08:59:20 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:08 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:00:09 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:20 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:20 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:00:20 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:20 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:00:20 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:00:23 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:02:05 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:02:06 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:02:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:02:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:02:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:02:17 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:02:17 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:02:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:02:21 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:03:29 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:03:30 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:03:41 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:03:41 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:03:41 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:03:42 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:03:42 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:03:42 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:03:45 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:05:19 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:05:19 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:05:27 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:05:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:05:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:05:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:05:28 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:05:28 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:05:32 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:06:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:14 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:14 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:15 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:06:15 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:18 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:06:50 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:06:50 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:07:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:07:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:07:01 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:07:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:07:02 UTC] Xdebug: [Log Files] File 'C:\Users\WAEL\Documents\php_profiling' could not be opened.
+[22-May-2025 09:07:02 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).
+[22-May-2025 09:07:05 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9003 (through xdebug.client_host/xdebug.client_port).

@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class PointManagementController extends Controller
 {
     /**
-     * this haction for all data of  point management in admin panel.
+     * this action for all data of point management in admin panel.
      */
     public function getAllusersWithPoints()
     {
